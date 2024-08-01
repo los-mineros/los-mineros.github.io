@@ -1,0 +1,174 @@
+/* https://river.me/blog/tournament-brackets/ */
+
+:root {
+	--grid-row-height: 3fr;
+}
+
+.round1 {
+	grid-column: 1;
+}
+
+.round2 {
+	grid-column: 3;
+}
+
+.round3 {
+	grid-column: 5;
+}
+
+.bracket-line,
+.bracket-spacer {
+	text-align: center;
+	height: 100%;
+}
+
+.bracket-grid-header,
+.bracket-team {
+	grid-row: span 1;
+	display: table;
+    border: 1px solid #000;
+	border-radius: 2px;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.bracket-line.round0 {
+	grid-column: 0;
+}
+
+.bracket-line.round1 {
+	grid-column: 2;
+}
+
+.bracket-line.round2 {
+	grid-column: 4;
+}
+
+bracket-header-content,
+.bracket-team-name,
+.bracket-team-points {
+	display: table-cell;
+	vertical-align: middle;
+    padding: 0.3em;
+    background-color: #43435777;
+}
+
+.bracket-grid {
+	display: grid;
+	grid-auto-flow: column;
+	line-height: 1;
+	max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bracket-grid-header,
+.bracket-team {
+	border: 1px solid #393944;
+}
+
+.bracket-grid-header {
+    margin-bottom: 1em;
+}
+
+.bracket-grid-header {
+	border: 1px solid #393944;
+	background: #393944;
+}
+
+.bracket-winner {
+	font-weight: bold;
+    background-color: #69ca7177;
+}
+
+.bracket-score-winner {
+	font-weight:bold;
+}
+
+
+.bracket-team-name {
+	padding: 3px;
+	min-width: 4em;
+	max-width: 0;
+	word-wrap: break-word;
+}
+.bracket-team-points {
+	background: #393944;
+	border-left: 1px solid #393944;
+}
+
+.bracket-line, .bracket-spacer {
+	--bracket-line-color: #bfbfd1;
+}
+
+.bracket-line::after, .bracket-line::before, .bracket-spacer.horizontal::before {
+    width: calc(50% + 2px);
+    height: calc(100% + 2px);
+    box-sizing: border-box;
+    display: inline-block;
+    margin: -1px;
+    border: 0 solid #efeff0;
+}
+
+.bracket-line.z-down::before {
+    content: "";
+    border-width: 2px 2px 0 0;
+    border-bottom: 2px solid transparent;
+    border-radius: 0 2px 0 0;
+}
+.bracket-line.z-down::after {
+    content: "";
+    border-width: 0 0 2px 2px;
+    border-top: 2px solid transparent;
+    border-radius: 0 0 0 2px;
+}
+
+.bracket-line.z-up::before {
+	content: "";
+	border-width: 0 2px 2px 0;
+	border-top: 2px solid transparent;
+	border-radius: 0 0 2px 0;
+}
+
+.bracket-line.z-up::after {
+	content: "";
+	border-width: 2px 0 0 2px;
+	border-bottom: 2px solid transparent;
+	border-radius: 2px 0 0 0;
+}
+
+
+
+.bracket-line.z-down::before {
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+.bracket-line.z-down::after {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+}
+
+.bracket-line.z-up::before {
+	content: "";
+	border-width: 0 2px 2px 0;
+	border-top: 2px solid transparent;
+	border-radius: 0 0 2px 0;
+}
+.bracket-line.z-up::after {
+	content: "";
+	border-width: 2px 0 0 2px;
+	border-bottom: 2px solid transparent;
+	border-radius: 2px 0 0 0;
+}
+
+.bracket-line.l-down::after {
+    content: "";
+    border-width: 0 0 2px 2px;
+    border-radius: 0 0 0 2px;
+    float: right;
+}

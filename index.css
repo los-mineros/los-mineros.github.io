@@ -1,0 +1,170 @@
+body {
+    background-image:
+        linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+        repeating-linear-gradient(45deg, #454661 25%, transparent 25%, transparent 75%, #454661 75%, #454661), 
+        repeating-linear-gradient(45deg, #454661 25%, #2f3044 25%, #2f3044 75%, #454661 75%, #454661);
+
+    background-position: 0 0, 90px 90px;
+    background-size: 180px 180px;
+}
+
+.content {
+    color: rgb(199, 199, 199);
+}
+
+.titleGroup {
+    vertical-align: auto;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.title {
+    color: azure;
+    font-family: 'Baskerville Old Face';
+    font-size: 4em;
+}
+
+.title-lines{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    position: relative;
+    /*  new lines  */
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .title-lines:before{
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 130px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: rgb(218, 218, 218);
+  }
+  .title-lines:after{
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 130px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: rgb(218, 218, 218);
+  }
+
+.title img {
+    height: 1em;
+    width: auto;
+}
+
+.textLeftIcon {
+    float: left;
+}
+
+.textRightIcon {
+    float: right;
+}
+
+.clasifTable {
+
+}
+
+.toRight {
+    text-align: right;
+}
+
+.tables {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #43435777;
+    border: 1px solid #2f3044;
+    border-collapse: collapse;
+    padding: 15px;
+    width: 50%;
+    color: rgb(199, 199, 199);
+    th, td {
+        padding: 0.3em;
+        text-align: left;
+    }
+}
+
+.eloTable {
+    
+}
+
+.explanationBox {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2f3044bd;
+    border:1px solid #2f3044;
+    padding: 0.5em;
+}
+
+.eloTable tr:nth-child(2){
+    background: #faee4e77;
+  }
+  
+.eloTable tr:nth-child(3){
+    background: #b6b5b577;
+  }
+  
+.eloTable tr:nth-child(4){
+    background: #ac631177;
+  }
+  
+
+.clasifTable tr:nth-child(2){
+    background: #69ca7177;
+  }
+  
+.clasifTable tr:nth-child(3){
+    background: #69ca7177;
+  }
+  
+.clasifTable tr:nth-child(4){
+    background: #69ca7177;
+  }
+  
+.clasifTable tr:nth-child(5){
+    background: #69ca7177;
+  }
+
+  .clasifTable tr:nth-child(6){
+    background:rgba(128, 0, 0, 0.459);
+  }
+  .clasifTable tr:nth-child(7){
+    background:rgba(128, 0, 0, 0.459);
+  }
+  
+
+.footer {
+    background-color: #1d1e2c;
+    color:rgb(199, 199, 199);
+    padding: 0.5em;
+    margin: 0;
+    margin-top: 3em;
+
+    left: 0;
+    right: 0;
+}
+.footertitle {
+    font-size: 1em;
+    vertical-align: auto;
+}
+.lwmimage {
+    left: auto;
+    float: left;
+}
+
+.matchwin {
+    background: #69ca7177;
+}
+.matchdraw {
+    background: #98a19877;
+}
