@@ -81,6 +81,9 @@ bracket-header-content,
 	font-weight: bold;
     background-color: #69ca7177;
 }
+.bracket-loser {
+    background-color: rgba(247, 37, 37, 0.329);
+}
 
 .bracket-score-winner {
 	font-weight:bold;

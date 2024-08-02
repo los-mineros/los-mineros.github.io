@@ -10,6 +10,7 @@ body {
 
 .content {
     color: rgb(199, 199, 199);
+    text-shadow: 0 0 2px #000000;
 }
 
 .titleGroup {
@@ -85,10 +86,11 @@ body {
     border: 1px solid #2f3044;
     border-collapse: collapse;
     padding: 15px;
-    width: 50%;
+    max-width: 90%;
     color: rgb(199, 199, 199);
     th, td {
         padding: 0.3em;
+        padding-inline: 0.6em;
         text-align: left;
     }
 }
@@ -107,7 +109,7 @@ body {
 }
 
 .eloTable tr:nth-child(2){
-    background: #faee4e77;
+    background: #f0e10e77;
   }
   
 .eloTable tr:nth-child(3){
@@ -118,6 +120,25 @@ body {
     background: #ac631177;
   }
   
+.eloTable td:nth-child(2) {
+  text-align: right;
+}
+.eloTable td:nth-child(3) {
+  text-align: right;
+}
+.eloTable td:nth-child(4) {
+  text-align: right;
+}
+.eloTable td:nth-child(5) {
+  text-align: right;
+}
+.eloTable td:nth-child(6) {
+  text-align: right;
+}
+
+.statsTable td:nth-child(2) {
+  text-align: right;
+}
 
 .clasifTable tr:nth-child(2){
     background: #69ca7177;
@@ -136,12 +157,19 @@ body {
   }
 
   .clasifTable tr:nth-child(6){
-    background:rgba(128, 0, 0, 0.459);
+    background:rgba(247, 37, 37, 0.329);
   }
   .clasifTable tr:nth-child(7){
-    background:rgba(128, 0, 0, 0.459);
+    background:rgba(247, 37, 37, 0.329);
   }
   
+.historyTable td:nth-child(3) {
+  text-align: right;
+}
+.historyTable td:nth-child(4) {
+  text-align: right;
+}
+
 
 .footer {
     background-color: #1d1e2c;
@@ -167,4 +195,7 @@ body {
 }
 .matchdraw {
     background: #98a19877;
+}
+.matchloss {
+    background:rgba(247, 37, 37, 0.329);
 }
