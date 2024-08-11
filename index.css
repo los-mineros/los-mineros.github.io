@@ -199,3 +199,115 @@ body {
 .matchloss {
     background:rgba(247, 37, 37, 0.329);
 }
+
+.cwicon {
+    background: url(assets/ChessWachinMini.png) no-repeat;
+    float: left;
+    width: 2rem;
+    height: 2rem;
+}
+
+.topbuttoncw {
+  border: solid 2px #14a107ea;
+  background: #0e5a071e;
+  border-radius: 5px;
+  transition-duration: 0.2s;
+  color: rgb(199, 199, 199);
+  font-size: 1em;
+  padding: 0.5em;
+  text-decoration: none;
+  width: fit-content;
+  margin: 0.5em;
+
+}
+.topbuttoncw img {
+  height: 1em;
+  width: auto;
+  vertical-align: text-bottom;
+}
+.topbuttoncw:hover {
+  background-color: #107907a6;
+}
+
+.topbuttonbcw {
+  border: solid 2px #e0dd0bea;
+  background: #0e5a071e;
+  border-radius: 5px;
+  transition-duration: 0.2s;
+  color: rgb(199, 199, 199);
+  font-size: 1em;
+  padding: 0.5em;
+  text-decoration: none;
+  width: fit-content;
+  margin: 0.5em;
+}
+.topbuttonbcw img {
+  height: 1em;
+  width: auto;
+  vertical-align: text-bottom;
+}
+.topbuttonbcw:hover {
+  background-color: #c9a60b9d;
+}
+
+
+.playingButton {
+  border: solid 2px #e0dd0bea;
+  border-radius: 5px;
+  padding: 0.5em;
+  margin: 0.5em;
+
+  animation: pulse 2s infinite;
+}
+
+.playingTitle {
+  animation: pulse-title 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #c9a60b9d;
+    border: solid 2px #e0dd0bea;
+  }
+  50% {
+    background-color: #ffd415bb;
+    border: solid 2px #cf9b0dea;
+  }
+  100% {
+    background-color: #c9a60b9d;
+    border: solid 2px #e0dd0bea;
+  }
+}
+
+@keyframes pulse-title {
+  0% {
+    color: rgb(199, 199, 199);
+  }
+  50% {
+    color: #ecaaa1;
+  }
+  100% {
+    color:rgb(199, 199, 199);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(.33);
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-dot {
+  0% {
+    transform: scale(.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(.8);
+  }
+}
