@@ -1,0 +1,76 @@
+/* Clase general para las tablas. */
+
+.tables {
+
+    /* Permitir que se expandan hacia
+    izquierda y derecha si es necesario. */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+
+    background-color: #43435777;
+    border: 0.3em solid #43435777;
+    border-collapse: collapse;
+    
+    padding: 15px;
+
+    /* Propiedades de las celdas. */
+    th, td {
+        padding: 0.3em;
+        padding-inline: 0.6em;
+        text-align: left;
+        border: 0.15em solid #43435777;
+    }
+
+    th {
+        background-color: #434357e7;
+      }
+}
+
+/* Tabla de estadísticas. */
+.stats-table td:nth-child(2) { text-align: right; }
+  
+/* Tablas en las que:
+    El primero es oro.
+    El segundo es plata.
+    El tercero es bronce. */
+.podium-table tr:nth-child(2) { background: var(--gold); }
+.podium-table tr:nth-child(3) { background: #b6b5b577; }
+.podium-table tr:nth-child(4) { background: #ac631177; }
+
+
+/* Tabla de ranking histórico. */
+.historic-ranking td:nth-child(4) { text-align: right; }
+.historic-ranking td:nth-child(5) { text-align: right; }
+.historic-ranking td:nth-child(6) { text-align: right; }
+.historic-ranking td:nth-child(7) { text-align: right; }
+
+/* Tabla de ELO. */
+.elo-ranking td:nth-child(2) { text-align: right; }
+.elo-ranking td:nth-child(3) { text-align: right; }
+.elo-ranking td:nth-child(4) { text-align: right; }
+.elo-ranking td:nth-child(5) { text-align: right; }
+
+/* Tabla de liga clasificatoria. */
+.league-table td:nth-child(2) { text-align: right; }
+.league-table td:nth-child(3) { text-align: right; }
+.league-table td:nth-child(4) { text-align: right; }
+.league-table td:nth-child(5) { text-align: right; }
+
+/* Tabla de liga clasificatoria de:
+    6 jugadores.
+    4 clasificados. */
+.league-table-6-4 tr:nth-child(2) { background: var(--win_background); }
+.league-table-6-4 tr:nth-child(3) { background: var(--win_background); }
+.league-table-6-4 tr:nth-child(4) { background: var(--win_background); }
+.league-table-6-4 tr:nth-child(5) { background: var(--win_background); }
+.league-table-6-4 tr:nth-child(6) { background:var(--loss_background); }
+.league-table-6-4 tr:nth-child(7) { background:var(--loss_background); }
+
+/* Tabla de historial de partidas. */
+.matches-table td:nth-child(3) { text-align: center; }
+.matches-table td:nth-child(4) { text-align: right; }
+
+.matchwin  { background: var(--win_background);  }
+.matchdraw { background: var(--draw_background); }
+.matchloss { background: var(--loss_background); }
