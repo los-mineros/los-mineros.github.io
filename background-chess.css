@@ -1,0 +1,21 @@
+body {
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0), rgba(21, 206, 4, 0.767)),
+        linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+        repeating-linear-gradient(45deg, #454661 25%, transparent 25%, transparent 75%, #454661 75%, #454661), 
+        repeating-linear-gradient(45deg, #454661 25%, #2f3044 25%, #2f3044 75%, #454661 75%, #454661);
+
+    background-position: 
+    0 0, 90px 90px,
+    0 0, 90px 90px,
+    0 0, 90px 90px,
+    0 0, 0px 0px
+        ;
+
+    background-size:
+    9000px 9000px,
+    180px 180px,
+    180px 180px,
+    180px 180px
+    ;
+}

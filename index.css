@@ -1,16 +1,7 @@
-body {
-    background-image:
-        linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-        repeating-linear-gradient(45deg, #454661 25%, transparent 25%, transparent 75%, #454661 75%, #454661), 
-        repeating-linear-gradient(45deg, #454661 25%, #2f3044 25%, #2f3044 75%, #454661 75%, #454661);
-
-    background-position: 0 0, 90px 90px;
-    background-size: 180px 180px;
-}
-
 .content {
     color: rgb(199, 199, 199);
     text-shadow: 0 0 2px #000000;
+    font-size: 1.1em;
 }
 
 .titleGroup {
@@ -33,7 +24,7 @@ body {
     margin-top: 3em;
     position: relative;
     /*  new lines  */
-    max-width: 500px;
+    max-width: 600px;
     text-align: center;
   }
 
@@ -135,6 +126,9 @@ body {
 .eloTable td:nth-child(6) {
   text-align: right;
 }
+.eloTable td:nth-child(7) {
+  text-align: right;
+}
 
 .statsTable td:nth-child(2) {
   text-align: right;
@@ -163,10 +157,16 @@ body {
     background:rgba(247, 37, 37, 0.329);
   }
   
-.historyTable td:nth-child(3) {
+.historyTable td:nth-child(4) {
   text-align: right;
 }
-.historyTable td:nth-child(4) {
+.historyTable td:nth-child(5) {
+  text-align: right;
+}
+.historyTable td:nth-child(6) {
+  text-align: right;
+}
+.historyTable td:nth-child(7) {
   text-align: right;
 }
 
@@ -252,11 +252,10 @@ body {
 
 
 .playingButton {
-  border: solid 2px #e0dd0bea;
+  border: solid 4px #ffd310;
   border-radius: 5px;
-  padding: 0.5em;
-  margin: 0.5em;
-
+  padding: 0.25em;
+  font-size: 2em;
   animation: pulse 2s infinite;
 }
 
@@ -266,16 +265,16 @@ body {
 
 @keyframes pulse {
   0% {
-    background-color: #c9a60b9d;
-    border: solid 2px #e0dd0bea;
+    background-color: #c9a60b52;
+    border-color: #e0dd0bea;
   }
   50% {
-    background-color: #ffd415bb;
-    border: solid 2px #cf9b0dea;
+    background-color: #ffd41560;
+    border-color: #cf9b0dea;
   }
   100% {
-    background-color: #c9a60b9d;
-    border: solid 2px #e0dd0bea;
+    background-color: #c9a60b52;
+    border-color: #e0dd0bea;
   }
 }
 
