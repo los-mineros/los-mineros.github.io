@@ -1,6 +1,6 @@
 body {
     background-image:
-        linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 252, 50, 0.89)),
+        linear-gradient(to right, rgba(0, 0, 0, 0), rgba(230, 226, 16, 0.616)),
         linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
         repeating-linear-gradient(45deg, #454661 25%, transparent 25%, transparent 75%, #454661 75%, #454661), 
         repeating-linear-gradient(45deg, #454661 25%, #2f3044 25%, #2f3044 75%, #454661 75%, #454661);
