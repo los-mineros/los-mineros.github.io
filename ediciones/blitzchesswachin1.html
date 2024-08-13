@@ -2,13 +2,13 @@
 <html>
     <head>
         <title>Chess-Wachín</title>
-        <link rel="stylesheet" href="index.css" />
-        <link rel="stylesheet" href="torunament.css" />
-        <link rel="stylesheet" href="players.css" />
-        <link rel="stylesheet" href="background-blitz.css" />
+        <link rel="stylesheet" href="../css/index.css" />
+        <link rel="stylesheet" href="../css/torunament.css" />
+        <link rel="stylesheet" href="../css/tables.css" />
+        <link rel="stylesheet" href="../css/background-blitz.css" />
 
-        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
     </head>
 
     <body>
@@ -17,27 +17,124 @@
             <div class="centerText titleGroup">
                 
                 <h1 class="title">
-                    <img class="leftTitleIcon" src="assets/chess wachin logo.png"/>
+                    <img class="leftTitleIcon" src="../assets/chess wachin logo.png"/>
                     Chess-Wachín
-                    <img class="rightTitleIcon" src="assets/chess wachin logo.png"/></h1>
+                    <img class="rightTitleIcon" src="../assets/chess wachin logo.png"/></h1>
                 
-                    <img class="centerText" src="assets/bcw1.png" width="300em" height="auto"/>
-
+                    <img class="centerText" src="../assets/bcw1.png" width="300em" height="auto"/>
+                    
                     <h2>Blitz-Chess-Wachín I</h2>
-                    <a href="index.html">Ver página general.</a>
+                    <a href="../index.html">Ver página general.</a>
             </div>
-
 
         <!-- Torneo -->
 
         <h2 class="centerText title-lines">Fase de playoffs</h2>
-        
+        <p class="centerText">DD mm YY - DD mm YY</p>
+        <p class="explanationBox">
+            Series de 5 partidas de 3 min, 3 min, 2 min, 2 min y 1 min.
+            <br>
+            Puntos por victoria: 2, puntos por empate: 1, puntos por derrota: 0.
+            <br>
+            Desempate tras 5 partidas con una partida de 5 minutos con apuesta de tiempo.
+            <br>
+            Gana el primero en llegar a 6 puntos.
+        </p>
 
+        
+        <div class="bracket-grid" >
+            <div class="bracket-grid-header round1"><div class="bracket-header-content">Semifinales</div></div>
+
+            
+            <div class="bracket-team round1">
+                <div class="bracket-team-name">-</div>
+                <div class="round round-none">10'</div>
+                <div class="round round-none">7'</div>
+                <div class="round round-none">5'</div>
+                <div class="round round-none">3'</div>
+                <div class="round round-none">1'</div>
+                <div class="bracket-team-points">7</div>
+            </div>
+            <div class="bracket-team round1">
+                <div class="bracket-team-name">-</div>
+                  <div class="round round-none">10'</div>
+                  <div class="round round-none">7'</div>
+                  <div class="round round-none">5'</div>
+                  <div class="round round-none">3'</div>
+                  <div class="round round-none">1'</div>
+                <div class="bracket-team-points">1</div>
+            </div>
+
+            <div class="bracket-spacer round1"></div>
+            <div class="bracket-spacer round1"></div>
+            <div class="bracket-spacer round1"></div>
+
+            <div class="bracket-team round1">
+                <div class="bracket-team-name">-</div>
+                <div class="round round-none">10'</div>
+                <div class="round round-none">7'</div>
+                <div class="round round-none">5'</div>
+                <div class="round round-none">3'</div>
+                <div class="round round-none">1'</div>
+                <div class="bracket-team-points">6</div>
+            </div>
+
+            <div class="bracket-team round1">
+                <div class="bracket-team-name">-</div>
+                <div class="round round-none">10'</div>
+                <div class="round round-none">7'</div>
+                <div class="round round-none">5'</div>
+                <div class="round round-none">3'</div>
+                <div class="round round-none">1'</div>
+                <div class="bracket-team-points">0</div>
+            </div>
+
+          <!---->
+            <div class="bracket-line round1" style="grid-row:span 2;"></div>
+            <div class="bracket-line z-down round1" style="grid-row:span 2;"></div>
+
+            <div class="bracket-line round1" style="grid-row:span 2;"></div>
+            <div class="bracket-line z-up round1" style="grid-row:span 0;"></div> <!---->
+
+            <div class="bracket-grid-header round2"><div class="bracket-header-content">Final</div></div>
+
+            <div class="bracket-spacer round2" style="grid-row:span 3;"></div>
+
+            <div class="bracket-team round2">
+                <div class="bracket-team-name">-</div>
+                <div class="round round-none">10'</div>
+                <div class="round round-none">7'</div>
+                <div class="round round-none">5'</div>
+                <div class="round round-none">3'</div>
+                <div class="round round-none">1'</div>
+                <div class="bracket-team-points">-</div>
+            </div>
+            <div class="bracket-team round2">
+                <div class="bracket-team-name">-</div>
+                <div class="round round-none">10'</div>
+                <div class="round round-none">7'</div>
+                <div class="round round-none">5'</div>
+                <div class="round round-none">3'</div>
+                <div class="round round-none">1'</div>
+                <div class="bracket-team-points">-</div>
+            </div>
+
+        </div>
 
              <!-- Clasificación -->
          <h2 class="centerText title-lines">Fase de liga</h2>
-         
-         <table class="tables clasifTable">
+         <p class="centerText">DD mm YYYY - DD mm YYYY</p>
+         <p class="explanationBox">
+            Cada jugador juega dos partidas de 3 minutos contra cada otro jugador: una con blancas y una con negras.
+            <br>
+            Puntos por victoria: 2, puntos por empate: 1, puntos por derrota: 0.
+            <br>
+            Los 4 primeros jugadores se clasifican para la fase de playoffs:
+            <br>
+            El primer clasificado juega contra el cuarto.
+            El segundo clasificado juega contra el tercero.
+        </p>
+         <table class="tables league-table league-table-6-4">
              <tr>
                  <th>Nombre</th>
                  <th>Puntos</th>
@@ -46,11 +143,12 @@
                  <th>Derrotas</th>
                </tr>
  
+ 
          </table>
 
          <h2 class="centerText title-lines">Historial de partidas</h2>
          <h3 class="centerText">Fase de liga</h3>
-         <table class="tables historyTable">
+         <table class="tables matches-table">
             <tr>
                 <th>Blancas</th>
                 <th>Negras</th>
@@ -58,12 +156,11 @@
                 <th>Duración</th>
                 <th>URL</th>
               </tr>
-              
          </table>
          
          <h3 class="centerText">Fase de playoffs</h3>
          <p class="centerText">Primera semifinal</p>
-         <table class="tables historyTable">
+         <table class="tables matches-table">
             <tr>
                 <th>Blancas</th>
                 <th>Negras</th>
@@ -71,11 +168,10 @@
                 <th>Duración</th>
                 <th>URL</th>
               </tr>
-              
          </table>
 
          <p class="centerText">Segunda semifinal</p>
-         <table class="tables historyTable">
+         <table class="tables matches-table">
             <tr>
                 <th>Blancas</th>
                 <th>Negras</th>
@@ -83,12 +179,11 @@
                 <th>Duración</th>
                 <th>URL</th>
               </tr>
-              
          </table>
 
          
          <p class="centerText">Final</p>
-         <table class="tables historyTable">
+         <table class="tables matches-table">
             <tr>
                 <th>Blancas</th>
                 <th>Negras</th>
@@ -96,13 +191,12 @@
                 <th>Duración</th>
                 <th>URL</th>
               </tr>
-                
          </table>
 
          <!-- Stats -->
           
         <h2 class="centerText title-lines">Estadísticas</h2>
-         <table class="tables statsTable">
+         <table class="tables stats-table">
           <tr>
             <td>Partidas totales</td>
             <td>-</td>
@@ -119,7 +213,6 @@
             <td>Victorias de negras</td>
             <td>-</td>
           </tr>
-          <tr></tr>
           <tr>
             <td>Media de movimientos</td>
             <td>-</td>
@@ -137,18 +230,17 @@
          </table>
 
          <h4 class="centerText">Clasificación por ELO (al inicio del torneo)</h2>
-          <table class="tables eloTable">
+          <table class="tables elo-ranking podium-table">
             <tr>
                 <th>Nombre</th>
                 <th>ELO</th>
               </tr>
-
         </table>
 
     </body>
 
     <footer class="footer centerText footertitle">
-        <img class="lwmimage" src="assets/lwm.png" width=50em height=auto/>
+        <img class="lwmimage" src="../assets/lwm.png" width=50em height=auto/>
         <p>Chess-Wachín, organizado por Los Wachines Mineros.
         <br>Página creada por oskiyu.</p>
       </footer> 

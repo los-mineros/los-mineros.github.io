@@ -1,19 +1,23 @@
 /* https://river.me/blog/tournament-brackets/ */
 
-:root {
-	--grid-row-height: 3fr;
-}
+.round1 { grid-column: 1; }
+.round2 { grid-column: 3; }
+.round3 { grid-column: 5; }
 
-.round1 {
-	grid-column: 1;
-}
+.bracket-line.round0 { grid-column: 0; width: ; }
+.bracket-line.round1 { grid-column: 2; }
+.bracket-line.round2 { grid-column: 4; }
 
-.round2 {
-	grid-column: 3;
-}
-
-.round3 {
-	grid-column: 5;
+.bracket-grid {
+	display: grid;
+	overflow: auto;
+	grid-auto-flow: column;
+	line-height: 1;
+	max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 1em;
+    border: 0.3em solid #43435777;
 }
 
 .bracket-line,
@@ -26,26 +30,13 @@
 .bracket-team {
 	grid-row: span 1;
 	display: table;
-    border: 1px solid #000;
-	border-radius: 2px;
+    border: 0.3em solid #43435777;
 	height: 100%;
 	width: 100%;
 	box-sizing: border-box;
 }
 
-.bracket-line.round0 {
-	grid-column: 0;
-}
-
-.bracket-line.round1 {
-	grid-column: 2;
-}
-
-.bracket-line.round2 {
-	grid-column: 4;
-}
-
-bracket-header-content,
+.bracket-header-content,
 .bracket-team-name,
 .bracket-team-points {
 	display: table-cell;
@@ -54,18 +45,9 @@ bracket-header-content,
     background-color: #43435777;
 }
 
-.bracket-grid {
-	display: grid;
-	grid-auto-flow: column;
-	line-height: 1;
-	max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .bracket-grid-header,
 .bracket-team {
-	border: 1px solid #393944;
+	border: 0.15em solid #393944;
 }
 
 .bracket-grid-header {
@@ -73,32 +55,30 @@ bracket-header-content,
 }
 
 .bracket-grid-header {
-	border: 1px solid #393944;
+	border: 0.35em solid #393944;
 	background: #393944;
 }
 
 .bracket-winner {
 	font-weight: bold;
-    background-color: #69ca7177;
+    background-color: var(--win_background);
 }
-.bracket-loser {
-    background-color: rgba(247, 37, 37, 0.329);
-}
+.bracket-winner:hover { background-color: var(--win_background_hover); }
 
-.bracket-score-winner {
-	font-weight:bold;
-}
+.bracket-loser { background-color: var(--loss_background); }
+.bracket-loser:hover { background-color: var(--loss_background_hover); }
+
+.bracket-score-winner { font-weight:bold; }
 
 
 .bracket-team-name {
-	padding: 3px;
+	padding: 0.4em;
 	min-width: 4em;
 	max-width: 0;
-	word-wrap: break-word;
 }
 .bracket-team-points {
 	background: #393944;
-	border-left: 1px solid #393944;
+	border-left: 0.3em solid #393944;
 }
 
 .bracket-line, .bracket-spacer {
@@ -175,3 +155,21 @@ bracket-header-content,
     border-radius: 0 0 0 2px;
     float: right;
 }
+
+.round {
+	display: table-cell;
+	vertical-align: middle;
+    padding: 0.3em;
+	max-width: 0.005em;
+	border-left: 0.2em solid #393944;
+	text-align: center;
+}
+
+.round-win { background-color: var(--win_background); }
+.round-draw { background-color: var(--draw_background); }
+.round-loss { background-color: var(--loss_background); }
+.round-none { background-color: #3939445d; }
+
+.round-win:hover { background-color: var(--win_background_hover); }
+.round-draw:hover { background-color: var(--draw_background_hover); }
+.round-loss:hover { background-color: var(--loss_background_hover); }

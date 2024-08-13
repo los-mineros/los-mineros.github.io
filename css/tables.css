@@ -22,21 +22,31 @@
         border: 0.15em solid #43435777;
     }
 
-    th {
-        background-color: #434357e7;
-      }
+    
+    tr:hover {
+        background-color: #434357;
+        border-color: #2b2bfc; 
+        text-decoration: underline;
+    }
+
+    th { background-color: #434357e7; }
 }
 
 /* Tabla de estadísticas. */
 .stats-table td:nth-child(2) { text-align: right; }
+.stats-table tr:nth-child(even) {background-color: #42393977;}
+.stats-table tr:nth-child(even):hover {background-color:rgba(105, 94, 94, 0.479);}
   
 /* Tablas en las que:
     El primero es oro.
     El segundo es plata.
     El tercero es bronce. */
 .podium-table tr:nth-child(2) { background: var(--gold); }
-.podium-table tr:nth-child(3) { background: #b6b5b577; }
-.podium-table tr:nth-child(4) { background: #ac631177; }
+.podium-table tr:nth-child(3) { background: var(--silver); }
+.podium-table tr:nth-child(4) { background: var(--bronze); }
+.podium-table tr:nth-child(2):hover { background: var(--gold_hover); }
+.podium-table tr:nth-child(3):hover { background: var(--silver_hover); }
+.podium-table tr:nth-child(4):hover { background: var(--bronze_hover); }
 
 
 /* Tabla de ranking histórico. */
@@ -64,8 +74,14 @@
 .league-table-6-4 tr:nth-child(3) { background: var(--win_background); }
 .league-table-6-4 tr:nth-child(4) { background: var(--win_background); }
 .league-table-6-4 tr:nth-child(5) { background: var(--win_background); }
-.league-table-6-4 tr:nth-child(6) { background:var(--loss_background); }
-.league-table-6-4 tr:nth-child(7) { background:var(--loss_background); }
+.league-table-6-4 tr:nth-child(6) { background: var(--loss_background); }
+.league-table-6-4 tr:nth-child(7) { background: var(--loss_background); }
+.league-table-6-4 tr:nth-child(2):hover { background: var(--win_background_hover); }
+.league-table-6-4 tr:nth-child(3):hover { background: var(--win_background_hover); }
+.league-table-6-4 tr:nth-child(4):hover { background: var(--win_background_hover); }
+.league-table-6-4 tr:nth-child(5):hover { background: var(--win_background_hover); }
+.league-table-6-4 tr:nth-child(6):hover { background:var(--loss_background_hover); }
+.league-table-6-4 tr:nth-child(7):hover { background:var(--loss_background_hover); }
 
 /* Tabla de historial de partidas. */
 .matches-table td:nth-child(3) { text-align: center; }
@@ -74,3 +90,7 @@
 .matchwin  { background: var(--win_background);  }
 .matchdraw { background: var(--draw_background); }
 .matchloss { background: var(--loss_background); }
+.matchwin:hover  { background: var(--win_background_hover);  }
+.matchdraw:hover { background: var(--draw_background_hover); }
+.matchloss:hover { background: var(--loss_background_hover); }
+

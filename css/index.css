@@ -8,12 +8,20 @@
   --text_size: 1.1em;
 
   --gold: #f0e10e77;
-  --sivler: #b6b5b577;
+  --silver: #b6b5b577;
   --bronze: #ac631177;
+
+  --gold_hover: rgba(214, 203, 45, 0.842);
+  --silver_hover: #b6b5b5af;
+  --bronze_hover: #c47112a8;
 
   --win_background: #69ca7177;
   --draw_background: #98a19877;
   --loss_background: rgba(247, 37, 37, 0.329);
+  
+  --win_background_hover: #69ca71d3;
+  --draw_background_hover: #98a198af;
+  --loss_background_hover: rgba(247, 37, 37, 0.616);
 }
 
 /* Para que en dispositivos móviles se vea más grande. */
