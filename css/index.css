@@ -236,3 +236,8 @@
     transform: scale(.8);
   }
 }
+
+.broadcastpartnerbutton {
+  width: 22em;
+  height: auto;
+}
