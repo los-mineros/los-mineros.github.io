@@ -66,9 +66,10 @@
 .league-table td:nth-child(3) { text-align: right; }
 .league-table td:nth-child(4) { text-align: right; }
 .league-table td:nth-child(5) { text-align: right; }
+.league-table td:nth-child(6) { text-align: right; }
 
 /* Tabla de liga clasificatoria de:
-    6 jugadores.
+    6/7 jugadores.
     4 clasificados. */
 .league-table-6-4 tr:nth-child(2) { background: var(--win_background); }
 .league-table-6-4 tr:nth-child(3) { background: var(--win_background); }
@@ -76,12 +77,14 @@
 .league-table-6-4 tr:nth-child(5) { background: var(--win_background); }
 .league-table-6-4 tr:nth-child(6) { background: var(--loss_background); }
 .league-table-6-4 tr:nth-child(7) { background: var(--loss_background); }
+.league-table-6-4 tr:nth-child(8) { background: var(--loss_background); }
 .league-table-6-4 tr:nth-child(2):hover { background: var(--win_background_hover); }
 .league-table-6-4 tr:nth-child(3):hover { background: var(--win_background_hover); }
 .league-table-6-4 tr:nth-child(4):hover { background: var(--win_background_hover); }
 .league-table-6-4 tr:nth-child(5):hover { background: var(--win_background_hover); }
 .league-table-6-4 tr:nth-child(6):hover { background:var(--loss_background_hover); }
 .league-table-6-4 tr:nth-child(7):hover { background:var(--loss_background_hover); }
+.league-table-6-4 tr:nth-child(8):hover { background:var(--loss_background_hover); }
 
 /* Tabla de historial de partidas. */
 .matches-table td:nth-child(3) { text-align: center; }

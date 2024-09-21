@@ -1,0 +1,118 @@
+.fullCombat {
+    display: flex;
+    margin: auto;
+    margin-top: 2em;
+}
+
+/* https://codepen.io/sato4yoshida/pen/BaKBeO */
+
+.combatBackgroundBronze {
+    padding: 0.2em;
+    background:
+    linear-gradient(
+      -72deg,
+      #ca7345,
+      #ffdeca 16%,
+      #ca7345 21%,
+      #ffdeca 24%,
+      #a14521 27%,
+      #ca7345 36%,
+      #ffdeca 45%,
+      #ffdeca 60%,
+      #ca7345 72%,
+      #ffdeca 80%,
+      #ca7345 84%,
+      #732100);
+
+}
+
+.combatBackgroundSilver {
+    padding: 0.2em;
+    background:
+  linear-gradient(
+    -72deg,
+    #dedede,
+    #ffffff 16%,
+    #dedede 21%,
+    #ffffff 24%,
+    #454545 27%,
+    #dedede 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedede 72%,
+    #ffffff 80%,
+    #dedede 84%,
+    #a1a1a1
+  );
+
+}
+
+.combatBackgroundGold {
+    padding: 0.2em;
+    background:
+    linear-gradient(
+      -72deg,
+      #ffdea1,
+      #ffffff 16%,
+      #ffdea1 21%,
+      #ffffff 24%,
+      #736445 27%,
+      #ffdea1 36%,
+      #ffffff 45%,
+      #ffffff 60%,
+      #ffdea1 72%,
+      #ffffff 80%,
+      #ffdea1 84%,
+      #736445
+    );
+
+}
+
+.combatDisplay {
+    display: flex;
+    margin: auto;
+}
+
+.combatContent {
+    background: #0f0b0bd5;
+    padding: 0.5em;
+    display: flex;
+    margin: auto;
+}
+
+.combatBackgroundSimple {
+    padding: 0.2em;
+    background: linear-gradient(
+      45deg,
+      #999 5%,
+      #fff 10%,
+      #ccc 30%,
+      #ddd 50%,
+      #ccc 70%,
+      #fff 80%,
+      #999 95%
+    );
+}
+
+.leftCombat {
+    transform: skewY(10deg);
+    margin-right: 2em;
+}
+.rightCombat {
+    transform: skewY(-10deg);
+    margin-left: 2em;
+}
+
+.combatPfp {
+    height: 10em;
+    width: auto;
+}
+
+.combatStats {
+    padding: 0.5em;
+}
+
+.centerImage {
+    height: 3em;
+    width: auto;
+}
