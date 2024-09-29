@@ -178,11 +178,14 @@
 
 
 .playingButton {
-  border: solid 4px #ffd310;
+  border: solid 2px #ffd310;
   border-radius: 5px;
-  padding: 0.25em;
-  font-size: 2em;
+  padding: 0.5em;
+  font-size: 1.1em;
   animation: pulse 2s infinite;
+}
+.playingButton:hover {
+  font-size: 1.15em;
 }
 
 .playingTitle {
