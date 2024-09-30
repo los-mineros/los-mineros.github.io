@@ -48,8 +48,16 @@
   font-size: 4em;
 }
 
+.bandera{
+  width: 2em;
+  height: auto;
+  border-radius: 5px; 
+  margin-right: 0.5rem;
+}
 
-
+.enlaceBandera{
+  display: flex;
+}
 
 .titleGroup {
     vertical-align: auto;
