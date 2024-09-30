@@ -146,6 +146,11 @@
   margin: 0.5em;
 
 }
+
+a, a:visited{
+  color: var(--text_color);
+}
+
 .topbuttoncw img {
   height: 1em;
   width: auto;
