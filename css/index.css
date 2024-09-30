@@ -49,10 +49,12 @@
 }
 
 .bandera{
-  width: 2em;
-  height: auto;
+  width: 1.49em;
+  height: 1em;
   border-radius: 5px; 
-  margin-right: 0.5rem;
+  margin-right: 0.25rem;
+  border: 0.1em solid #000000;
+  box-shadow: #000000 0px 0px 0.25em;
 }
 
 .enlaceBandera{
