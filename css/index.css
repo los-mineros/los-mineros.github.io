@@ -57,6 +57,21 @@
   box-shadow: #000000 0px 0px 0.25em;
 }
 
+.pfp {
+  width: 8em;
+  height: auto;
+  border-radius: 0.5em; 
+}
+
+.pfpMini {
+  width: 0.9em;
+  height: 0.9em;
+  border-radius: 5px; 
+  border: 0.1em solid #000000;
+  margin-right: 0.25rem;
+  box-shadow: #000000 0px 0px 0.25em;
+}
+
 .enlaceBandera{
   display: flex;
 }
