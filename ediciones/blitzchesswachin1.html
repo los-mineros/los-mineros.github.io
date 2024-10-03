@@ -2,16 +2,18 @@
 <html>
     <head>
         <title>Chess-Wachín</title>
-        <link rel="stylesheet" href="../css/index.css" />
         <link rel="stylesheet" href="../css/torunament.css" />
         <link rel="stylesheet" href="../css/tables.css" />
         <link rel="stylesheet" href="../css/background-blitz.css" />
+        <link rel="stylesheet" href="../css/index.css" />
+
+        <script src="../scripts/tableSearch.js"></script> 
 
         <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
     </head>
 
-    <body>
+    <body onload="javascript:sortTable()">
 
         <div class="content">
             <div class="centerText titleGroup">
@@ -133,8 +135,9 @@
             El primer clasificado juega contra el cuarto.
             El segundo clasificado juega contra el tercero.
         </p>
-         <table class="tables league-table league-table-6-4">
-             <tr>
+
+         <table class="tables league-table league-table-6-4" id="ranking">
+             <tr id="header">
                  <th>Nombre</th>
                  <th>Puntos</th>
                  <th>Partidas</th>
@@ -209,9 +212,14 @@
          </table>
 
          <h2 class="centerText title-lines">Historial de partidas</h2>
+
          <h3 class="centerText">Fase de liga</h3>
-         <table class="tables matches-table">
-            <tr>
+         <div class="centerText">Filtrar por nombres: 
+            <input onkeydown='searchInTable()' onkeyup='searchInTable()' type='text' id="searchInput" placeholder="Primer jugador">
+            <input onkeydown='searchInTable()' onkeyup='searchInTable()' type='text' id="searchInput2" placeholder="Segundo jugador">
+          </div>
+         <table class="tables matches-table" id="historyTable">
+            <tr id="header">
                 <th>Blancas</th>
                 <th>Negras</th>
                 <th>Movimientos</th>
@@ -219,7 +227,7 @@
                 <th>URL</th>
               </tr>
               
-              <tr><td>30 septiembre 2024</td><td></td><td></td><td></td><td></td></tr>
+              <tr id="fecha"><td>30 septiembre 2024</td><td></td><td></td><td></td><td></td></tr>
 
               <tr>
                 <td class="matchloss"><a href="../perfiles/Ramboromir.html" class="enlaceBandera"><img src="../assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
@@ -288,7 +296,7 @@
               </tr>
 
               <!-- DÍA 2 -->
-              <tr><td>1 octubre 2024</td><td></td><td></td><td></td><td></td></tr>
+              <tr id="fecha"><td>1 octubre 2024</td><td></td><td></td><td></td><td></td></tr>
               <tr>
                 <td class="matchloss"><a href="../perfiles/oskiyu2.html" class="enlaceBandera"> <img src="../assets/flagSpain.png" class="bandera" alt=""> oskiyu2 </a></td>
                 <td class="matchwin"><a href="../perfiles/Chechu_25.html" class="enlaceBandera"> <img src="../assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
@@ -305,7 +313,7 @@
               </tr>
               
               <!-- DÍA 3 -->
-              <tr><td>2 octubre 2024</td><td></td><td></td><td></td><td></td></tr>
+              <tr id="fecha"><td>2 octubre 2024</td><td></td><td></td><td></td><td></td></tr>
               <tr>
                 <td class="matchloss"><a href="../perfiles/Chechu_25.html" class="enlaceBandera"> <img src="../assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
                 <td class="matchwin"><a href="../perfiles/oskiyu2.html" class="enlaceBandera"> <img src="../assets/flagSpain.png" class="bandera" alt=""> oskiyu2 </a></td>

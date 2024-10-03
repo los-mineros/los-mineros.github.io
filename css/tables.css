@@ -97,3 +97,11 @@
 .matchdraw:hover { background: var(--draw_background_hover); }
 .matchloss:hover { background: var(--loss_background_hover); }
 
+
+.tableFound {
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 1em;
+    background-color: #2b2bfc;
+  }
+  
