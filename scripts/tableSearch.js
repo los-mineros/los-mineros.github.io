@@ -86,9 +86,9 @@ function sortTable() {
         var row = table.rows[i];
 
         var points  = parseFloat(row.cells[1].textContent || row.cells[1].innerText);
-        var wins    = parseFloat(row.cells[3].textContent || row.cells[3].innerText);
-        var draws   = parseFloat(row.cells[4].textContent || row.cells[4].innerText);
-        var losses  = parseFloat(row.cells[5].textContent || row.cells[5].innerText);
+        var wins    = parseFloat(row.cells[2].textContent || row.cells[2].innerText);
+        var draws   = parseFloat(row.cells[3].textContent || row.cells[3].innerText);
+        var losses  = parseFloat(row.cells[4].textContent || row.cells[4].innerText);
    
         if (isNaN(points) || isNaN(wins) || isNaN(draws) || isNaN(losses)) {
             continue;
