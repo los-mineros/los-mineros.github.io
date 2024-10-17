@@ -95,11 +95,11 @@
 }
 
 .leftCombat {
-    transform: skewY(10deg);
+    transform: skewY(5deg);
     margin-right: 2em;
 }
 .rightCombat {
-    transform: skewY(-10deg);
+    transform: skewY(-5deg);
     margin-left: 2em;
 }
 

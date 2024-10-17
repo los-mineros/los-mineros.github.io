@@ -10,6 +10,40 @@
 
         <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+      
+            function drawChart() {
+      
+              var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Victorias',   18],
+                ['Empates',     5],
+                ['Derrotas',    7]
+              ]);
+      
+              var options = {
+                slices: {
+                    0: { color: 'green' },
+                    1: { color: 'gray' },
+                    2: { color: 'red' },
+                },
+                backgroundColor: { fill:'transparent' },
+                legend: {
+                    position: 'bottom',
+                    textStyle: {color: 'white' }
+                }
+              };
+      
+              var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      
+              chart.draw(data, options);
+            }
+          </script>
+      
     </head>
     
     <body>
@@ -81,6 +115,9 @@
                 <div>
                     🟩🟥🟩🟩🟩🟩🟨🟥🟩🟨🟩🟩
                 </div>
+
+                <h4>Total:</h4>
+                <div class="piechart centerText" id="piechart"></div>
 
                 <h4>Por jugador:</h4>
                 

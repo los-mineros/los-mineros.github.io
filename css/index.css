@@ -222,6 +222,13 @@ a, a:visited{
   animation: pulse-title 1s infinite;
 }
 
+.piechart {
+  width: 25em;
+  height: 25em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @keyframes pulse {
   0% {
     background-color: #c9a60b52;
