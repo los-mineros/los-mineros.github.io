@@ -172,10 +172,6 @@
 
 }
 
-a, a:visited{
-  color: var(--text_color);
-}
-
 .topbuttoncw img {
   height: 1em;
   width: auto;
@@ -183,6 +179,31 @@ a, a:visited{
 }
 .topbuttoncw:hover {
   background-color: #107907a6;
+}
+
+.youtubeButton {
+  border: solid 2px #d61616ea;
+  background: #f115157c;
+  border-radius: 5px;
+  transition-duration: 0.2s;
+  color: var(--text_color);
+  font-size: 1em;
+  padding: 0.5em;
+  text-decoration: none;
+  width: fit-content;
+  margin: 0.5em;
+}
+.youtubeButton:hover {
+  background-color: #d61616ea;
+}
+.youtubeButton img {
+  height: 1.2em;
+  width: auto;
+  vertical-align: text-bottom;
+}
+
+a, a:visited{
+  color: var(--text_color);
 }
 
 .topbuttonbcw {

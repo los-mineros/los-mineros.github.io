@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Chess-Wachín</title>
+        <link rel="stylesheet" href="../css/torunament.css" />
+        <link rel="stylesheet" href="../css/tables.css" />
+        <link rel="stylesheet" href="../css/background-blitz.css" />
+        <link rel="stylesheet" href="../css/index.css" />
+        
+        <link rel="stylesheet" href="./overlays.css" />
+
+        <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+
+        <script src="./flag.js"></script> 
+    </head>
+
+    <body onload="javascript:sortTable()">
+
+        <div class="background"></div>
+        <div class="backgroundAnimated"></div>
+        <div class="content">
+
+        <div class="overlayfullCombat">
+
+            <div class="overlayleftCombat overlaycombatDisplay overlaycombatBackgroundSimple"> <!-- OSKIYU -->
+                <div class="overlaycombatContent">
+                    
+                    <div>
+                        <img class="overlaycombatPfp" src="../assets/martilux.png">
+                    </div>
+
+                    <div class="overlaycombatStats uyBackground">&emsp; Estadísticas:
+                        <br>
+                        <br>
+                        🥇 1º en liga
+                        <br>
+                        <br>
+                        Durante liga:
+                        <br>
+                        <span class="wintext">11 WINS</span> <span class="drawtext">1 DRAWS</span> <span class="losstext">0 LOSSES</span>
+                        <div class="statsBar centerText">
+                            <span style="width:92%" class="statsBarbar1"></span>
+                            <span style="width:8%" class="statsBarbar2"></span>
+                            <span style="width:0%" class="statsBarbar3"></span>
+                        </div>
+                        <br>
+                        Histórico:
+                        <br>
+                        <span class="wintext">24 WINS</span> <span class="drawtext">7 DRAWS</span> <span class="losstext">0 LOSSES</span>
+                        <div class="statsBar centerText">
+                            <span style="width:77%" class="statsBarbar1"></span>
+                            <span style="width:23%" class="statsBarbar2"></span>
+                            <span style="width:0%" class="statsBarbar3"></span>
+                        </div>
+                        <br>
+                        Contra MrMhem:
+                        <br>
+                        <span class="wintext">3 WINS</span> <span class="drawtext">1 DRAWS</span> <span class="losstext">0 LOSSES</span>
+                        <div class="statsBar centerText">
+                            <span style="width:75%" class="statsBarbar1"></span>
+                            <span style="width:25%" class="statsBarbar2"></span>
+                            <span style="width:0%" class="statsBarbar3"></span>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- CAMBIAR A MEDIDA QUE SE JUEGUEN LAS PARTIDAS -->
+                    <!-- SUMAR 2 EN CASO DE VICTORIA, 1 EN CASO DE EMPATE -->
+                    <div class="points centerText">0</div>
+                    <div class="centerText overlayplayerName">martilux2580</div>
+                </div>
+            </div>
+            
+            <div class="verticalContainer">
+
+                <div class="centerText titleGroup">
+                    <h1 class="semis">SEMIFINALES</h1>
+                </div>
+
+                <div class="results centerText"> <!-- RESULTADOS -->
+                    <!-- IR CAMBIANDO A MEDIDA QUE SE JUEGUEN LAS PARTIDAS -->
+                    <!-- SI GANA martilux, cambiar source por "../assets/martilux.png"-->
+                    <!-- SI GANA moha, cambiar source por "../assets/moha.webp"-->
+                    <!-- SI HAY EMPATE, cambiar source por "../assets/empateMartiluxMoha.png"-->
+                    <img class="matchResult" src="../assets/tbd.png"></img>
+                    <img class="matchResult" src="../assets/tbd.png"></img>
+                    <img class="matchResult" src="../assets/tbd.png"></img>
+                    <img class="matchResult" src="../assets/tbd.png"></img>
+                    <img class="matchResult" src="../assets/tbd.png"></img>
+                    <img class="matchResult" src="../assets/tbd.png"></img>
+                    <img class="matchResult" src="../assets/tbd.png"></img>
+                </div>
+
+                <div class="view"></div>
+
+                    <img class="bcw1" src="../assets/bcw1.png"/>
+            </div>
+
+            <div class="overlayrightCombat overlaycombatDisplay overlaycombatBackgroundSimple"> <!-- OSKIYU -->
+                <div class="overlaycombatContent">
+                    
+                    <div>
+                        <img class="overlaycombatPfp" src="../assets/moha.webp">
+                    </div>
+
+                    <div class="overlaycombatStats mohaBackground">&emsp; Estadísticas:
+                        <br>
+                        <br>
+                        4º en liga
+                        <br>
+                        <br>
+                        Durante liga:
+                        <br>
+                        <span class="wintext">5 WINS</span> <span class="drawtext">2 DRAWS</span> <span class="losstext">5 LOSSES</span>
+                        <div class="statsBar centerText">
+                            <span style="width:42%" class="statsBarbar1"></span>
+                            <span style="width:16%" class="statsBarbar2"></span>
+                            <span style="width:42%" class="statsBarbar3"></span>
+                        </div>
+                        <br>
+                        Histórico:
+                        <br>
+                        <span class="wintext">6 WINS</span> <span class="drawtext">5 DRAWS</span> <span class="losstext">11 LOSSES</span>
+                        <div class="statsBar centerText">
+                            <span style="width:27%" class="statsBarbar1"></span>
+                            <span style="width:22%" class="statsBarbar2"></span>
+                            <span style="width:50%" class="statsBarbar3"></span>
+                        </div>
+                        <br>
+                        Contra martilux2580:
+                        <br>
+                        <span class="wintext">0 WINS</span> <span class="drawtext">1 DRAWS</span> <span class="losstext">3 LOSSES</span>
+                        <div class="statsBar centerText">
+                            <span style="width:0%" class="statsBarbar1"></span>
+                            <span style="width:25%" class="statsBarbar2"></span>
+                            <span style="width:75%" class="statsBarbar3"></span>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- CAMBIAR A MEDIDA QUE SE JUEGUEN LAS PARTIDAS -->
+                    <!-- SUMAR 2 EN CASO DE VICTORIA, 1 EN CASO DE EMPATE -->
+                    <div class="points centerText">0</div>
+                    <div class="centerText playerName">MrMhem</div>
+                </div>
+            </div>
+            
+        </div>
+
+    </body>
+</html>
