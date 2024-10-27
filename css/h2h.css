@@ -116,3 +116,7 @@
     height: 3em;
     width: auto;
 }
+
+.displayWinner {
+    color: white;
+}
