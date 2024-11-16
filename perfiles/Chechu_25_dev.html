@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chess-Wachín</title>
+        <link rel="stylesheet" href="/css/index.css" />
+        <link rel="stylesheet" href="/css/torunament.css" />
+        <link rel="stylesheet" href="/css/tables.css" />
+        <link rel="stylesheet" href="/css/h2h.css" />
+        <link rel="stylesheet" href="/css/background-default.css" />
+
+        <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+      
+            function drawChart() {
+      
+              var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Victorias',   11],
+                ['Empates',     2],
+                ['Derrotas',    18]
+              ]);
+      
+              var options = {
+                slices: {
+                    0: { color: 'green' },
+                    1: { color: 'gray' },
+                    2: { color: 'red' },
+                },
+                backgroundColor: { fill:'transparent' },
+                legend: {
+                    position: 'bottom',
+                    textStyle: {color: 'white' }
+                }
+              };
+      
+              var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      
+              chart.draw(data, options);
+            }
+          </script>
+      
+    </head>
+    
+    <body>
+        <div class="content">
+
+            <div class="centerText titleGroup">                
+                <h1 class="title">
+                    <img class="leftTitleIcon" src="../assets/chess wachin logo.png"/>
+                    <a href="../index.html">Chess-Wachín</a>
+                    <img class="rightTitleIcon" src="../assets/chess wachin logo.png"/></h1>
+            
+                    <img src="/pfps/chechu.jpg" class="pfp">
+                    <div style="display: flex; justify-content: center;">
+                        <h2 class="enlaceBandera">Chechu_25 (#3)</h2>
+                    </div>
+            </div>
+
+                <h2 class="centerText">Récords y logros</h2>
+                <p class="explanationBox">
+                </p>  
+                <h2 class="centerText">Resultados</h2>
+                <cwssg:profile:results>
+
+                <div class="centerText">
+                <h2>Historial</h2>
+                <h4>Chess-Wachín I</h4>
+                <div>
+                    🟩🟩🟩🟩🟥🟩🟩🟥🟩🟥🟩🟩🟩🟥🟨🟨🟨🟥
+                </div>
+                
+                <h4>Blitz-Chess-Wachín I</h4>
+                <div>
+                    🟩🟥🟩🟩🟩🟩🟨🟥🟩🟨🟩🟩🟩🟩🟥🟩🟩🟩🟨🟥🟥🟥🟩🟥
+                </div>
+
+                <h4>Total:</h4>
+                <div class="piechart centerText" id="piechart"></div>
+
+                <h4>Por jugador:</h4>
+                
+                <table class="tables">
+                    <tr><td>Contra</td><td>Victorias</td><td>Empates</td><td>Derrotas</td></tr>
+
+                    <tr>
+                        <td class="matchloss">
+                            <a href="../perfiles/martilux2580.html" class="enlaceBandera">
+                            <img src="../assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a>
+                        </td>
+                        <td class="matchwin">2</td>
+                        <td class="matchdraw">5</td>
+                        <td class="matchloss">9</td>
+                    </tr>
+
+                    <tr>
+                        <td class="matchwin">
+                            <a href="../perfiles/Chechu_25.html" class="enlaceBandera">
+                            <img src="../assets/flagSpain.png" class="bandera" alt=""> Chechu_25</a>
+                        </td>
+                        <td class="matchwin">6</td>
+                        <td class="matchdraw">0</td>
+                        <td class="matchloss">3</td>
+                    </tr>
+
+                    <tr>
+                        <td class="matchwin">
+                            <a href="../perfiles/charliecc13.html" class="enlaceBandera">
+                            <img src="../assets/flagSpain.png" class="bandera" alt=""> charliecc13</a>
+                        </td>
+                        <td class="matchwin">3</td>
+                        <td class="matchdraw">1</td>
+                        <td class="matchloss">0</td>
+                    </tr>
+
+                    <tr>
+                        <td class="matchwin">
+                            <a href="../perfiles/MrMhem.html" class="enlaceBandera">
+                            <img src="../assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem</a>
+                        </td>
+                        <td class="matchwin">4</td>
+                        <td class="matchdraw">0</td>
+                        <td class="matchloss">0</td>
+                    </tr>
+
+                    <tr>
+                        <td class="matchwin">
+                            <a href="../perfiles/Ramboromir.html" class="enlaceBandera">
+                            <img src="../assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a>
+                        </td>
+                        <td class="matchwin">4</td>
+                        <td class="matchdraw">0</td>
+                        <td class="matchloss">0</td>
+                    </tr>
+
+                    <tr>
+                        <td class="matchwin">
+                            <a href="../perfiles/Alberto17MG.html" class="enlaceBandera">
+                            <img src="../assets/flagSpain.png" class="bandera" alt=""> Alberto17MG</a>
+                        </td>
+                        <td class="matchwin">2</td>
+                        <td class="matchdraw">0</td>
+                        <td class="matchloss">0</td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+    </body>
+    
+    <footer class="footer centerText footertitle">
+    <img class="lwmimage" src="/assets/lwm.png" width=50em height=auto/>
+    <p>Chess-Wachín, organizado por Los Wachines Mineros.
+    <br>Página generada con ChessWachinSSG 0.0.0.0.</p>
+</footer> 
+</html>
