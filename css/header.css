@@ -1,0 +1,113 @@
+/* Barra superior de la página */
+
+
+.header {
+    vertical-align: auto;
+    background-color: rgb(24, 23, 26);
+    margin: 0;
+    display: flex;
+    font-family: 'Impact';
+    align-items: center;
+
+    margin-bottom: 2em;
+}
+
+.header_img {
+    height: 1.5em;
+    width: auto;
+    float: left;
+    text-decoration: none;
+}
+
+a.header_no_underline { text-decoration: none; }
+
+.header_title {
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    font-size: 1.6em;
+    padding-right: 0.75em;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    font-family: 'Arial Black';
+}
+
+.topnav_element {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1.0em;
+  font-size: 1.15em;
+  text-decoration: none; 
+  margin-left: 0.15em;
+  height: 100%;
+  border-radius: 0.15em;
+  transition-duration: 0.2s;
+  text-decoration-color: #284e0000;
+  cursor: pointer;
+}
+
+.topnav_element:hover {
+  color: #f2f2f2;
+  text-decoration: underline;
+  text-decoration-color: #284e00;
+  text-decoration-style: underline;
+  text-decoration-thickness: 0.3em;
+}
+
+.topnav_element_active {
+  background-color: #10130e;
+  border-color: #284e00;
+  border-width: 0.1em;
+}
+
+.topnav_dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.topnav_dropdown_content {
+  display: none;
+  top: 3.5em;
+  left: inherit - 1em;
+  height: 0;
+  position: fixed;
+  background-color: rgba(30, 30, 30);
+  min-width: 13em;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.topnav_dropdown_content a {
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  transition-duration: 0.2s;
+}
+
+.topnav_player {  
+  text-align: left;
+  padding: 0.2em;
+  margin-left: 0.5em;
+}
+
+.topnav_player_content {  
+  padding: 0.2em;
+}
+
+.topnav_player:hover {  
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #284e00;
+  text-decoration-style: underline;
+  text-decoration-thickness: 0.1em;
+}
+
+/* Change color of dropdown links on hover */
+
+/* Show the dropdown menu on hover */
+.topnav_dropdown:hover .topnav_dropdown_content {
+  display: block;
+  height: auto;
+}

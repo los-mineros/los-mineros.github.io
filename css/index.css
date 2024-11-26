@@ -24,13 +24,6 @@
   --loss_background_hover: rgba(247, 37, 37, 0.616);
 }
 
-/* Para que en dispositivos móviles se vea más grande. */
-@media (max-width:1360px){
-  .content {
-    font-size: 1.4em;  
-  }
-}
-
 /* ------ General ------ */
 
 .content {

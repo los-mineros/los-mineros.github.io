@@ -20,6 +20,12 @@
     border: 0.3em solid #43435777;
 }
 
+
+@media (min-width: 1400px) {
+    .bracket-grid { max-width: 60%;}
+}
+
+
 .bracket-line,
 .bracket-spacer {
 	text-align: center;

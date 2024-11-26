@@ -7,30 +7,64 @@
         <link rel="stylesheet" href="css/tables.css" />
         <link rel="stylesheet" href="css/h2h.css" />
         <link rel="stylesheet" href="css/background-default.css" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/sidebar_editions.css" />
 
         <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+        
+        <script type="text/javascript" src="scripts/sidebar_ediciones.js"></script>
 
 		<BASE href="./">
     </head>
 
+    <header class="header">
+    <h1 class="header_title header_no_underline">        
+      <a href="/index.html" class="header_no_underline"><img class="header_img" src="/assets/chess wachin logo.png"/><span class="header_no_underline">CHESS WACHÍN SERIES</span></a>
+    </h1>
+    <div class="topnav">
+      <a class="topnav_element" href="/index.html">INICIO</a>
+      <a class="topnav_element">NOTICIAS</a>
+
+      <!--<div class="topnav_element topnav_dropdown">
+        EDICIONES
+
+        <div class="topnav_dropdown_content">
+          <a href="ediciones/blitzchesswachin1.html" class="topbuttonbcw">
+            <img class="titleGroup" src="assets/BlitzChessWachinMini.png"/>
+            Blitz-Chess-Wachín I
+          </a>
+          <a href="ediciones/chesswachin1.html" class="topbuttoncw">
+            <img class="titleGroup" src="assets/ChessWachinMini.png"/>
+            Chess-Wachín I
+          </a>
+        </div>
+      </div>-->
+      <div class="topnav_element topnav_dropdown">
+        JUGADORES
+
+        <div class="topnav_dropdown_content topnav_player_content">
+            <a href="/perfiles/oskiyu2.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a><a href="/perfiles/martilux2580.html" class="enlaceBandera topnav_player"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a><a href="/perfiles/charliecc13.html" class="enlaceBandera topnav_player"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a><a href="/perfiles/MrMhem.html" class="enlaceBandera topnav_player"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a><a href="/perfiles/Chechu_25.html" class="enlaceBandera topnav_player"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a><a href="/perfiles/Alberto17MG.html" class="enlaceBandera topnav_player"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a><a href="/perfiles/Ramboromir.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
     <body>
+      <button id="open_editions_sidebar" class="edition_show_button" onclick="open_editions_sidenav()">&#9776; EDICIONES</button>
+    <div id="editions_sidebar" class="sidenav_editions">
+    <a href="javascript:void(0)" class="edition_hide_button" onclick="close_editions_sidenav()">&times; EDICIONES</a>
 
-        <div class="content">
+    <a href="/ediciones/blitzchesswachin1.html" class="edition_type_bcw">
+        <img class="titleGroup" src="/assets/bcw1.png"/>
+    </a>
 
-            <div class="centerText titleGroup">                
-                <h1 class="title">
-                    <img class="leftTitleIcon" src="/assets/chess wachin logo.png"/>
-<a href="index.html">Chess-Wachín</a>
-<img class="rightTitleIcon" src="/assets/chess wachin logo.png"/></h1>
-            
-                    <h2>Página principal</h2>
-
-                  <a href="https://www.youtube.com/@chechu2530">
-                    <img class="broadcastpartnerbutton" src="assets/partnerchechu.png"/>
-                  </a>
-            </div>
-            
+    <a href="/ediciones/chesswachin1.html" class="edition_type_cw">
+        <img class="titleGroup" src="/assets/cwc1.png"/>
+    </a>
+</div>
+      
+        <div class="content" id="content">
 
           <!--
           <h2 class="centerText title-lines">Ediciones futuras</h2>
@@ -46,23 +80,6 @@
           </div>
           -->
 
-            <h2 class="centerText title-lines">Ediciones anteriores</h2>
-            
-          <div class="centerText verticalLayout">
-            <a href="ediciones/blitzchesswachin1.html" class="topbuttonbcw">
-              <img class="titleGroup" src="assets/BlitzChessWachinMini.png"/>
-              Blitz-Chess-Wachín I (Septiembre 2024 - Octubre 2024)
-            </a>
-            </div>
-            <br>
-            <br>
-            
-            <div class="centerText verticalLayout">
-              <a href="ediciones/chesswachin1.html" class="topbuttoncw">
-                <img class="titleGroup" src="assets/ChessWachinMini.png"/>
-                Chess-Wachín I (Abril 2024 - Mayo 2024)
-              </a>
-          </div>
  <!--Clasificación por puntos-->
  
  <h2 class="centerText title-lines">Clasificación histórica</h2>
@@ -79,7 +96,7 @@
 
       
       <tr>
-  <td><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+  <td><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
   <td>🏆 x2</td>
   <td>🥇 x4 </td>
   <td>73</td>
@@ -87,7 +104,7 @@
   <td>9</td>
   <td>2</td>
 </tr><tr>
-  <td><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+  <td><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
   <td></td>
   <td>🥈 x4 </td>
   <td>54</td>
@@ -95,7 +112,7 @@
   <td>6</td>
   <td>12</td>
 </tr><tr>
-  <td><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+  <td><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
   <td></td>
   <td>🥉 x1</td>
   <td>24</td>
@@ -103,7 +120,7 @@
   <td>2</td>
   <td>18</td>
 </tr><tr>
-  <td><a href="/perfiles/charliecc13.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
+  <td><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
   <td></td>
   <td>🥉 x1</td>
   <td>21</td>
@@ -111,7 +128,7 @@
   <td>3</td>
   <td>13</td>
 </tr><tr>
-  <td><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+  <td><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
   <td></td>
   <td></td>
   <td>18</td>
@@ -119,7 +136,7 @@
   <td>6</td>
   <td>15</td>
 </tr><tr>
-  <td><a href="/perfiles/Ramboromir.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
+  <td><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
   <td></td>
   <td></td>
   <td>8</td>
@@ -127,7 +144,7 @@
   <td>4</td>
   <td>16</td>
 </tr><tr>
-  <td><a href="/perfiles/Alberto17MG.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
+  <td><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
   <td></td>
   <td></td>
   <td>4</td>
@@ -156,7 +173,7 @@
     </tr>
 
     </tr><tr>
-	<td><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+	<td><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
 	<td>1009</td>
 	<td>344</td>
 	<td>104</td>
@@ -164,7 +181,7 @@
     <td>736</td>
 </tr>
 </tr><tr>
-	<td><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+	<td><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
 	<td>849</td>
 	<td>45</td>
 	<td>12</td>
@@ -172,7 +189,7 @@
     <td>98</td>
 </tr>
 </tr><tr>
-	<td><a href="/perfiles/charliecc13.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
+	<td><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
 	<td>833</td>
 	<td>187</td>
 	<td>24</td>
@@ -180,7 +197,7 @@
     <td>353</td>
 </tr>
 </tr><tr>
-	<td><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+	<td><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
 	<td>369</td>
 	<td>22</td>
 	<td>8</td>
@@ -188,7 +205,7 @@
     <td>68</td>
 </tr>
 </tr><tr>
-	<td><a href="/perfiles/Ramboromir.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
+	<td><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
 	<td>319</td>
 	<td>14</td>
 	<td>4</td>
@@ -196,7 +213,7 @@
     <td>28</td>
 </tr>
 </tr><tr>
-	<td><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+	<td><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
 	<td>203</td>
 	<td>68</td>
 	<td>15</td>
@@ -204,7 +221,7 @@
     <td>169</td>
 </tr>
 </tr><tr>
-	<td><a href="/perfiles/Alberto17MG.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
+	<td><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
 	<td>127</td>
 	<td>2</td>
 	<td>5</td>
@@ -227,7 +244,7 @@
     </tr>
 
     </tr><tr>
-	<td><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+	<td><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
 	<td>1173</td>
 	<td>20</td>
 	<td>0</td>
@@ -235,7 +252,7 @@
     <td>35</td>
 </tr>
 </tr><tr>
-	<td><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+	<td><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
 	<td>681</td>
 	<td>45</td>
 	<td>8</td>
@@ -243,7 +260,7 @@
     <td>129</td>
 </tr>
 </tr><tr>
-	<td><a href="/perfiles/charliecc13.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
+	<td><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
 	<td>343</td>
 	<td>36</td>
 	<td>4</td>
@@ -251,7 +268,7 @@
     <td>78</td>
 </tr>
 </tr><tr>
-	<td><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+	<td><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
 	<td>218</td>
 	<td>48</td>
 	<td>6</td>
@@ -259,7 +276,7 @@
     <td>101</td>
 </tr>
 </tr><tr>
-	<td><a href="/perfiles/Ramboromir.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
+	<td><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
 	<td>166</td>
 	<td>14</td>
 	<td>4</td>
@@ -267,7 +284,7 @@
     <td>34</td>
 </tr>
 </tr><tr>
-	<td><a href="/perfiles/Alberto17MG.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
+	<td><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
 	<td>-</td>
 	<td>-</td>
 	<td>-</td>
@@ -275,7 +292,7 @@
     <td>-</td>
 </tr>
 </tr><tr>
-	<td><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+	<td><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
 	<td>-</td>
 	<td>-</td>
 	<td>-</td>

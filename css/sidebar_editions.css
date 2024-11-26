@@ -1,0 +1,101 @@
+/* Clases para el sidebar con las ediciones del torneo. */
+
+
+.sidenav_editions {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+.sidenav_editions a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.edition_show_button {
+    border-radius: 5em;
+    color: aliceblue;
+    background-color: #111;
+    padding: 1em;
+    margin-top:1em;
+    font-family: 'Impact';
+    transition: 0.3s;
+    position: absolute;
+    cursor: pointer;
+}
+
+.edition_show_button:hover {
+    background-color: #4e4e4e;
+}
+
+.edition_hide_button {
+    color: aliceblue;
+    background-color: #111;
+    padding: 1em;
+    font-family: 'Impact';
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.edition_hide_button:hover {
+    color: #d3d3d3;
+}
+
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.edition_type_cw {
+    border: solid 0.1em #14a107ea;
+    border-radius: 0.1em;
+    transition-duration: 0.2s;
+    color: var(--text_color);
+    font-size: 1em;
+    padding: 0.15em;
+    text-decoration: none;
+    margin: 0.15em;
+}
+
+.edition_type_cw img {
+    height: 2.2em;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.edition_type_cw:hover {
+    background-color: #107907a6;
+}
+
+.edition_type_bcw {
+    border: solid 0.1em #e0dd0bea;
+    border-radius: 0.1em;
+    transition-duration: 0.2s;
+    color: var(--text_color);
+    font-size: 1em;
+    padding: 0.15em;
+    text-decoration: none;
+    margin: 0.15em;
+}
+
+.edition_type_bcw img {
+    height: 2.2em;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.edition_type_bcw:hover {
+    background-color: #c9a60b9d;
+}

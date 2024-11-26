@@ -32,6 +32,11 @@
     th { background-color: #434357e7; }
 }
 
+@media (max-width: 1200px) {
+    .tables { max-width: 100%;}
+}
+
+
 /* Tabla de estadísticas. */
 .stats-table td:nth-child(2) { text-align: right; }
 .stats-table tr:nth-child(even) {background-color: #42393977;}

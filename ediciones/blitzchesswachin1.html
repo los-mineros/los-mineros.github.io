@@ -7,26 +7,69 @@
         <link rel="stylesheet" href="../css/background-blitz.css" />
         <link rel="stylesheet" href="../css/index.css" />
         <link rel="stylesheet" href="../css/h2h.css" />
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/sidebar_editions.css" />
 
         <script src="../scripts/tableSearch.js"></script> 
+        
+        <script type="text/javascript" src="../scripts/sidebar_ediciones.js"></script>
 
         <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
     </head>
 
-    <body onload="javascript:sortTable()">
 
-        <div class="content">
+    <header class="header">
+    <h1 class="header_title header_no_underline">        
+      <a href="/index.html" class="header_no_underline"><img class="header_img" src="/assets/chess wachin logo.png"/><span class="header_no_underline">CHESS WACHÍN SERIES</span></a>
+    </h1>
+    <div class="topnav">
+      <a class="topnav_element" href="/index.html">INICIO</a>
+      <a class="topnav_element">NOTICIAS</a>
+
+      <!--<div class="topnav_element topnav_dropdown">
+        EDICIONES
+
+        <div class="topnav_dropdown_content">
+          <a href="ediciones/blitzchesswachin1.html" class="topbuttonbcw">
+            <img class="titleGroup" src="assets/BlitzChessWachinMini.png"/>
+            Blitz-Chess-Wachín I
+          </a>
+          <a href="ediciones/chesswachin1.html" class="topbuttoncw">
+            <img class="titleGroup" src="assets/ChessWachinMini.png"/>
+            Chess-Wachín I
+          </a>
+        </div>
+      </div>-->
+      <div class="topnav_element topnav_dropdown">
+        JUGADORES
+
+        <div class="topnav_dropdown_content topnav_player_content">
+            <a href="/perfiles/oskiyu2.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a><a href="/perfiles/martilux2580.html" class="enlaceBandera topnav_player"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a><a href="/perfiles/charliecc13.html" class="enlaceBandera topnav_player"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a><a href="/perfiles/MrMhem.html" class="enlaceBandera topnav_player"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a><a href="/perfiles/Chechu_25.html" class="enlaceBandera topnav_player"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a><a href="/perfiles/Alberto17MG.html" class="enlaceBandera topnav_player"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a><a href="/perfiles/Ramboromir.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    <body onload="javascript:sortTable()">
+        <button id="open_editions_sidebar" class="edition_show_button" onclick="open_editions_sidenav()">&#9776; EDICIONES</button>
+    <div id="editions_sidebar" class="sidenav_editions">
+    <a href="javascript:void(0)" class="edition_hide_button" onclick="close_editions_sidenav()">&times; EDICIONES</a>
+
+    <a href="/ediciones/blitzchesswachin1.html" class="edition_type_bcw">
+        <img class="titleGroup" src="/assets/bcw1.png"/>
+    </a>
+
+    <a href="/ediciones/chesswachin1.html" class="edition_type_cw">
+        <img class="titleGroup" src="/assets/cwc1.png"/>
+    </a>
+</div>
+        
+        <div class="content" id="content">
             <div class="centerText titleGroup">
-                
-                <h1 class="title">
-                    <img class="leftTitleIcon" src="../assets/chess wachin logo.png"/>
-                    <a href="../index.html">Chess-Wachín</a>
-                    <img class="rightTitleIcon" src="../assets/chess wachin logo.png"/></h1>
-                
-                    <img class="centerText" src="../assets/bcw1.png" width="300em" height="auto"/>
-                    
-                    <h2>Blitz-Chess-Wachín I</h2>
+                <img class="centerText" src="../assets/bcw1.png" width="300em" height="auto">
+                <h2>Blitz-Chess-Wachín I</h2>
             </div>
             
             <div class="centerText">
@@ -68,7 +111,7 @@
     <div class="bracket-grid-header round1"><div class="bracket-header-content">Semifinales</div></div>
 
     <div class="bracket-team round1">
-        <div class="bracket-team-name bracket-winner"><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></div>
+        <div class="bracket-team-name bracket-winner"><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></div>
         <div class="round round-win">1'</div>
         <div class="round round-draw">3'</div>
         <div class="round round-win">2'</div>
@@ -79,7 +122,7 @@
         <div class="bracket-team-points bracket-winner">9</div>
     </div>
     <div class="bracket-team round1">
-        <div class="bracket-team-name bracket-loser"><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></div>
+        <div class="bracket-team-name bracket-loser"><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></div>
           <div class="round round-loss">1'</div>
           <div class="round round-draw">3'</div>
           <div class="round round-loss">2'</div>
@@ -95,7 +138,7 @@
     <div class="bracket-spacer round1"></div>
 
     <div class="bracket-team round1">
-        <div class="bracket-team-name bracket-winner"><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></div>
+        <div class="bracket-team-name bracket-winner"><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></div>
         <div class="round round-win">3'</div>
         <div class="round round-win">1'</div>
         <div class="round round-loss">3'</div>
@@ -107,7 +150,7 @@
     </div>
 
     <div class="bracket-team round1">
-        <div class="bracket-team-name bracket-loser"><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></div>
+        <div class="bracket-team-name bracket-loser"><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></div>
         <div class="round round-loss">3'</div>
         <div class="round round-loss">1'</div>
         <div class="round round-win">3'</div>
@@ -130,7 +173,7 @@
     <div class="bracket-spacer round2" style="grid-row:span 3;"></div>
 
     <div class="bracket-team round2">
-        <div class="bracket-team-name bracket-winner"><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></div>
+        <div class="bracket-team-name bracket-winner"><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></div>
         <div class="round round-loss">3'</div>
         <div class="round round-draw">1'</div>
         <div class="round round-win">2'</div>
@@ -141,7 +184,7 @@
         <div class="bracket-team-points bracket-winner">9</div>
     </div>
     <div class="bracket-team round2">
-        <div class="bracket-team-name bracket-loser"><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></div>
+        <div class="bracket-team-name bracket-loser"><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></div>
         <div class="round round-win">3'</div>
         <div class="round round-draw">1'</div>
         <div class="round round-loss">2'</div>
@@ -178,43 +221,43 @@
       </tr>
 
       <tr>
-    <td><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a> 🥇</td>
+    <td><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a> 🥇</td>
     <td>23</td>
     <td>11</td>
     <td>1</td>
     <td>0</td>
 </tr><tr>
-    <td><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a> 🥈</td>
+    <td><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a> 🥈</td>
     <td>18</td>
     <td>8</td>
     <td>2</td>
     <td>2</td>
 </tr><tr>
-    <td><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a> 🥉</td>
+    <td><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a> 🥉</td>
     <td>14</td>
     <td>7</td>
     <td>0</td>
     <td>5</td>
 </tr><tr>
-    <td><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a> </td>
+    <td><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a> </td>
     <td>12</td>
     <td>5</td>
     <td>2</td>
     <td>5</td>
 </tr><tr>
-    <td><a href="/perfiles/charliecc13.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a> </td>
+    <td><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a> </td>
     <td>8</td>
     <td>3</td>
     <td>2</td>
     <td>7</td>
 </tr><tr>
-    <td><a href="/perfiles/Ramboromir.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a> </td>
+    <td><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a> </td>
     <td>5</td>
     <td>1</td>
     <td>3</td>
     <td>8</td>
 </tr><tr>
-    <td><a href="/perfiles/Alberto17MG.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a> </td>
+    <td><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a> </td>
     <td>4</td>
     <td>1</td>
     <td>2</td>
@@ -243,64 +286,64 @@
 <tr><td>30 septiembre 2024</td><td></td><td></td><td></td><td></td></tr>
 
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
-    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchloss" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
+    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
     <td>31</td>
     <td>4m 31s</td>
     <td><a href= "https://www.chess.com/game/live/121438237563/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
-    <td class= "matchloss" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
+    <td class= "matchwin" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+    <td class= "matchloss" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
     <td>55</td>
     <td>5m 32s</td>
     <td><a href= "https://www.chess.com/game/live/121439477647/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
-    <td class= "matchwin" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+    <td class= "matchloss" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
+    <td class= "matchwin" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
     <td>17</td>
     <td>1m 25s</td>
     <td><a href= "https://www.chess.com/game/live/121448506565/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
-    <td class= "matchloss" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
+    <td class= "matchwin" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+    <td class= "matchloss" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
     <td>50</td>
     <td>5m 9s</td>
     <td><a href= "https://www.chess.com/game/live/121449018033/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
-    <td class= "matchloss" ><a href="/perfiles/charliecc13.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
+    <td class= "matchwin" ><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+    <td class= "matchloss" ><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
     <td>42</td>
     <td>5m 35s</td>
     <td><a href= "https://www.chess.com/game/live/121449607045/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/charliecc13.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
-    <td class= "matchwin" ><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+    <td class= "matchloss" ><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
+    <td class= "matchwin" ><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
     <td>45</td>
     <td>4m 35s</td>
     <td><a href= "https://www.chess.com/game/live/121450190241/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
-    <td class= "matchwin" ><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+    <td class= "matchloss" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+    <td class= "matchwin" ><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
     <td>30</td>
     <td>2m 48s</td>
     <td><a href= "https://www.chess.com/game/live/121450285235/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
-    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchloss" ><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
     <td>46</td>
     <td>4m 30s</td>
     <td><a href= "https://www.chess.com/game/live/121456287455/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
-    <td class= "matchloss" ><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchloss" ><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
     <td>70</td>
     <td>5m 29s</td>
     <td><a href= "https://www.chess.com/game/live/121456829533/" >Link</a></td>
@@ -308,15 +351,15 @@
 <tr><td>1 octubre 2024</td><td></td><td></td><td></td><td></td></tr>
 
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
-    <td class= "matchwin" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+    <td class= "matchloss" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchwin" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
     <td>33</td>
     <td>4m 13s</td>
     <td><a href= "https://www.chess.com/game/live/121516809435/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
-    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchloss" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
+    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
     <td>40</td>
     <td>4m 46s</td>
     <td><a href= "https://www.chess.com/game/live/121516867675/" >Link</a></td>
@@ -324,22 +367,22 @@
 <tr><td>2 octubre 2024</td><td></td><td></td><td></td><td></td></tr>
 
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
-    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchloss" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
     <td>33</td>
     <td>4m 43s</td>
     <td><a href= "https://www.chess.com/game/live/121600863617/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
-    <td class= "matchloss" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
+    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchloss" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
     <td>12</td>
     <td>1m 56s</td>
     <td><a href= "https://www.chess.com/game/live/121602026985/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
-    <td class= "matchwin" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+    <td class= "matchloss" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
+    <td class= "matchwin" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
     <td>55</td>
     <td>4m 53s</td>
     <td><a href= "https://www.chess.com/game/live/121640996951/" >Link</a></td>
@@ -347,50 +390,50 @@
 <tr><td>3 octubre 2024</td><td></td><td></td><td></td><td></td></tr>
 
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
-    <td class= "matchwin" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+    <td class= "matchloss" ><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+    <td class= "matchwin" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
     <td>55</td>
     <td>4m 58s</td>
     <td><a href= "https://www.chess.com/game/live/121720839827/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
-    <td class= "matchloss" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
+    <td class= "matchwin" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
+    <td class= "matchloss" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
     <td>24</td>
     <td>3m 12s</td>
     <td><a href= "https://www.chess.com/game/live/121721414261/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchdraw" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
-    <td class= "matchdraw" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
+    <td class= "matchdraw" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
+    <td class= "matchdraw" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
     <td>67</td>
     <td>5m 57s</td>
     <td><a href= "https://www.chess.com/game/live/121722048965/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchdraw" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
-    <td class= "matchdraw" ><a href="/perfiles/charliecc13.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
+    <td class= "matchdraw" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
+    <td class= "matchdraw" ><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
     <td>52</td>
     <td>5m 2s</td>
     <td><a href= "https://www.chess.com/game/live/121722671923/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/charliecc13.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
-    <td class= "matchwin" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
+    <td class= "matchloss" ><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
+    <td class= "matchwin" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
     <td>46</td>
     <td>5m 15s</td>
     <td><a href= "https://www.chess.com/game/live/121723240961/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/charliecc13.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
-    <td class= "matchloss" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
+    <td class= "matchwin" ><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
+    <td class= "matchloss" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
     <td>14</td>
     <td>1m 32s</td>
     <td><a href= "https://www.chess.com/game/live/121723814077/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
-    <td class= "matchwin" ><a href="/perfiles/charliecc13.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
+    <td class= "matchloss" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
+    <td class= "matchwin" ><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
     <td>58</td>
     <td>5m 23s</td>
     <td><a href= "https://www.chess.com/game/live/121723844933/" >Link</a></td>
@@ -398,50 +441,50 @@
 <tr><td>8 octubre 2024</td><td></td><td></td><td></td><td></td></tr>
 
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
-    <td class= "matchloss" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
+    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchloss" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
     <td>32</td>
     <td>4m 43s</td>
     <td><a href= "https://www.chess.com/game/live/122125787395/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
-    <td class= "matchloss" ><a href="/perfiles/charliecc13.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
+    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchloss" ><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
     <td>57</td>
     <td>5m 27s</td>
     <td><a href= "https://www.chess.com/game/live/122150375107/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/charliecc13.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
-    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchloss" ><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
+    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
     <td>45</td>
     <td>5m 58s</td>
     <td><a href= "https://www.chess.com/game/live/122150949633/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchdraw" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
-    <td class= "matchdraw" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchdraw" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchdraw" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
     <td>61</td>
     <td>5m 40s</td>
     <td><a href= "https://www.chess.com/game/live/122152139069/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
-    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchloss" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
     <td>57</td>
     <td>5m 51s</td>
     <td><a href= "https://www.chess.com/game/live/122152235939/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
-    <td class= "matchloss" ><a href="/perfiles/charliecc13.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
+    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchloss" ><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
     <td>31</td>
     <td>4m 52s</td>
     <td><a href= "https://www.chess.com/game/live/122153334541/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchdraw" ><a href="/perfiles/charliecc13.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
-    <td class= "matchdraw" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchdraw" ><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
+    <td class= "matchdraw" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
     <td>67</td>
     <td>4m 45s</td>
     <td><a href= "https://www.chess.com/game/live/122153334541/" >Link</a></td>
@@ -449,43 +492,43 @@
 <tr><td>12 octubre 2024</td><td></td><td></td><td></td><td></td></tr>
 
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
-    <td class= "matchloss" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchloss" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
     <td>31</td>
     <td>4m 24s</td>
     <td><a href= "https://www.chess.com/game/live/122493877435/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
-    <td class= "matchloss" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
+    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchloss" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
     <td>44</td>
     <td>5m 49s</td>
     <td><a href= "https://www.chess.com/game/live/122494532549/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
-    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchloss" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
+    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
     <td>57</td>
     <td>5m 1s</td>
     <td><a href= "https://www.chess.com/game/live/122495107643/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
-    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchloss" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
     <td>57</td>
     <td>5m 16s</td>
     <td><a href= "https://www.chess.com/game/live/122496259101/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
-    <td class= "matchloss" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
+    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchloss" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
     <td>30</td>
     <td>4m 49s</td>
     <td><a href= "https://www.chess.com/game/live/122507051561/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
-    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchloss" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
+    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
     <td>31</td>
     <td>4m 49s</td>
     <td><a href= "https://www.chess.com/game/live/122495107643/" >Link</a></td>
@@ -493,57 +536,57 @@
 <tr><td>13 octubre 2024</td><td></td><td></td><td></td><td></td></tr>
 
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
-    <td class= "matchloss" ><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchloss" ><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
     <td>25</td>
     <td>3m 25s</td>
     <td><a href= "https://www.chess.com/game/live/122556917733/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
-    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchloss" ><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
     <td>32</td>
     <td>3m 24s</td>
     <td><a href= "https://www.chess.com/game/live/122557459369/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
-    <td class= "matchloss" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
+    <td class= "matchwin" ><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+    <td class= "matchloss" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
     <td>62</td>
     <td>5m 53s</td>
     <td><a href= "https://www.chess.com/game/live/122559233537/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
-    <td class= "matchwin" ><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+    <td class= "matchloss" ><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
+    <td class= "matchwin" ><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
     <td>40</td>
     <td>3m 13s</td>
     <td><a href= "https://www.chess.com/game/live/122559310351/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchdraw" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
-    <td class= "matchdraw" ><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+    <td class= "matchdraw" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
+    <td class= "matchdraw" ><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
     <td>62</td>
     <td>5m 56s</td>
     <td><a href= "https://www.chess.com/game/live/122559857889/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/charliecc13.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
-    <td class= "matchwin" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+    <td class= "matchloss" ><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
+    <td class= "matchwin" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
     <td>57</td>
     <td>5m 38s</td>
     <td><a href= "https://www.chess.com/game/live/122559870845/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchdraw" ><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
-    <td class= "matchdraw" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
+    <td class= "matchdraw" ><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+    <td class= "matchdraw" ><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
     <td>48</td>
     <td>4m 7s</td>
     <td><a href= "https://www.chess.com/game/live/122560425835/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
-    <td class= "matchwin" ><a href="/perfiles/charliecc13.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
+    <td class= "matchloss" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+    <td class= "matchwin" ><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
     <td>22</td>
     <td>2m 39s</td>
     <td><a href= "https://www.chess.com/game/live/122560448543/" >Link</a></td>
@@ -568,36 +611,36 @@
 <tr><td>20 octubre 2024</td><td></td><td></td><td></td><td></td></tr>
 
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
-    <td class= "matchloss" ><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchloss" ><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
     <td>44</td>
     <td>1m 50s</td>
     <td><a href= "https://www.chess.com/game/live/123184852047/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchdraw" ><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
-    <td class= "matchdraw" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchdraw" ><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+    <td class= "matchdraw" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
     <td>66</td>
     <td>4m 36s</td>
     <td><a href= "https://www.chess.com/game/live/123184885579/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
-    <td class= "matchloss" ><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchloss" ><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
     <td>43</td>
     <td>3m 57s</td>
     <td><a href= "https://www.chess.com/game/live/123185452645/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
-    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchloss" ><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
     <td>19</td>
     <td>1m 38s</td>
     <td><a href= "https://www.chess.com/game/live/123185987715/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
-    <td class= "matchloss" ><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchloss" ><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
     <td>33</td>
     <td>3m 55s</td>
     <td><a href= "https://www.chess.com/game/live/123186023173/" >Link</a></td>
@@ -619,36 +662,36 @@
 <tr><td>20 octubre 2024</td><td></td><td></td><td></td><td></td></tr>
 
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
-    <td class= "matchloss" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchloss" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
     <td>25</td>
     <td>2m 22s</td>
     <td><a href= "https://www.chess.com/game/live/123186615499/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
-    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchloss" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
     <td>42</td>
     <td>1m 49s</td>
     <td><a href= "https://www.chess.com/game/live/123187186741/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
-    <td class= "matchwin" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+    <td class= "matchloss" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchwin" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
     <td>28</td>
     <td>2m 46s</td>
     <td><a href= "https://www.chess.com/game/live/123187246871/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
-    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchloss" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
     <td>32</td>
     <td>1m 52s</td>
     <td><a href= "https://www.chess.com/game/live/123187785377/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
-    <td class= "matchloss" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchloss" ><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
     <td>46</td>
     <td>2m 16s</td>
     <td><a href= "https://www.chess.com/game/live/123187848863/" >Link</a></td>
@@ -670,50 +713,50 @@
 <tr><td>27 octubre 2024</td><td></td><td></td><td></td><td></td></tr>
 
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
-    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchloss" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
     <td>49</td>
     <td>5m 23s</td>
     <td><a href= "https://www.chess.com/game/live/123770396569/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchdraw" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
-    <td class= "matchdraw" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchdraw" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchdraw" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
     <td>51</td>
     <td>1m 48s</td>
     <td><a href= "https://www.chess.com/game/live/123770978207/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
-    <td class= "matchloss" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchloss" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
     <td>67</td>
     <td>3m 23s</td>
     <td><a href= "https://www.chess.com/game/live/123771079707/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchloss" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
-    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchloss" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
     <td>60</td>
     <td>4m 28s</td>
     <td><a href= "https://www.chess.com/game/live/123771624469/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
-    <td class= "matchloss" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchloss" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
     <td>35</td>
     <td>1m 56s</td>
     <td><a href= "https://www.chess.com/game/live/123772224417/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
-    <td class= "matchloss" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchwin" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchloss" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
     <td>55</td>
     <td>3m 34s</td>
     <td><a href= "https://www.chess.com/game/live/123772264647/" >Link</a></td>
 </tr>
 <tr>
-    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
-    <td class= "matchloss" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td class= "matchwin" ><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td class= "matchloss" ><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
     <td>52</td>
     <td>1m 57s</td>
     <td><a href= "https://www.chess.com/game/live/123772821447/" >Link</a></td>
@@ -764,25 +807,25 @@
       </tr>
 
       <tr>
-    <td><a href="/perfiles/martilux2580.html" class="enlaceBandera"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
+    <td><a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a></td>
     <td>1173</td>
 </tr><tr>
-    <td><a href="/perfiles/oskiyu2.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
     <td>657</td>
 </tr><tr>
-    <td><a href="/perfiles/charliecc13.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
+    <td><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
     <td>343</td>
 </tr><tr>
-    <td><a href="/perfiles/Chechu_25.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+    <td><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
     <td>220</td>
 </tr><tr>
-    <td><a href="/perfiles/Ramboromir.html" class="enlaceBandera"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
+    <td><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
     <td>167</td>
 </tr><tr>
-    <td><a href="/perfiles/MrMhem.html" class="enlaceBandera"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
+    <td><a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a></td>
     <td>-</td>
 </tr><tr>
-    <td><a href="/perfiles/Alberto17MG.html" class="enlaceBandera"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
+    <td><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
     <td>-</td>
 </tr>
 </table>

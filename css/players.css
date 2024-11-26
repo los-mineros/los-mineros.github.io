@@ -1,7 +1,180 @@
-.martilux {
-    content: "martilux2580";
+.pfp_country_card {
+    background-blend-mode: multiply;
+    background-size: contain;
+    border-radius: 2em;
+    border-color: #111;
+    border-width: 0.5em;
+
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    height: fit-content;
+    border-style: solid;
 }
 
-.oskiyu {
-    content: "🇪🇦oskiyu2";
+.pfp_country_card_spain {
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, #111 17%), url(/assets/flagSpain.png);
+    background-size: contain;
+}
+
+.pfp_country_card_mosp {
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, #111 17%), url(/assets/flagMoroccoSpain.png);
+    background-size: contain;
+}
+
+.pfp_country_card_uy {
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, #111 17%), url(/assets/flagUruguay.png);
+    background-size: contain;
+}
+
+.gradient-img {
+    background-blend-mode: multiply;
+    background-size: contain;
+    border-radius: 2em;
+    border-color: #111;
+    border-width: 0.5em;
+
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    height: fit-content;
+    border-style: solid;
+}
+
+.pfp {
+    width: 2.5em;
+    height: auto;
+    border-radius: 0.25em; 
+    vertical-align: middle;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+.player_pf_name {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.pfp_card {
+    border-radius: 1.5em;
+    background-color: #111;
+    vertical-align: middle;
+    height: fit-content;
+    margin-left: 12em;
+    padding: 1em;
+    border-color: #8f8f8f;
+    border-width: 0.2em;
+    border-style: solid;
+}
+
+
+.pfp_card_normal {
+    border-color: #0b5801;
+      border-width: 0.2em;
+      border-style: solid;
+}
+
+.pfp_card_line {
+    display: flex;
+    vertical-align: middle;
+    height: fit-content;
+}
+
+.pfp_global_ranking_card {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.pfp_global_ranking_position {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pfp_logros_text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.pfp_ranking_gold {
+    background-image: linear-gradient(
+        -72deg,
+        #ffdea1,
+        #ffffff 16%,
+        #ffdea1 21%,
+        #ffffff 24%,
+        #c0ab80 27%,
+        #ffdea1 36%,
+        #ffffff 45%,
+        #ffffff 60%,
+        #ffdea1 72%,
+        #ffffff 80%,
+        #ffdea1 84%,
+        #736445
+      );
+  
+    text-shadow: none; 
+    color: transparent;
+    background-clip: text;
+}
+
+.pfp_ranking_silver {
+    background-image: linear-gradient(
+        -72deg,
+        #dedede,
+        #ffffff 16%,
+        #dedede 21%,
+        #ffffff 24%,
+        #949494 27%,
+        #dedede 36%,
+        #ffffff 45%,
+        #ffffff 60%,
+        #dedede 72%,
+        #ffffff 80%,
+        #dedede 84%,
+        #a1a1a1
+      );
+  
+    text-shadow: none; 
+    color: transparent;
+    background-clip: text;
+}
+
+.pfp_ranking_bronze {
+    background-image: linear-gradient(
+        -72deg,
+        #ca7345,
+        #ffdeca 16%,
+        #ca7345 21%,
+        #b17b59 24%,
+        #e2612d 27%,
+        #ca7345 36%,
+        #ffdeca 45%,
+        #ffdeca 60%,
+        #ca7345 72%,
+        #ffdeca 80%,
+        #ca7345 84%,
+        #c94612);
+  
+    text-shadow: none; 
+    color: transparent;
+    background-clip: text;
+}
+
+ 
+@media (max-width: 1200px) {
+    .pfp_card { margin-left: 6em;}
+    .pfp_country_card { 
+        width: 85%; 
+        margin-right: 1em;
+    }
+    .player_pf_name { font-size: 2em;}
+    .pfp_global_ranking_position { font-size: 2.5em; }
+    .pfp_logros_text { font-size: 2em; }
 }
