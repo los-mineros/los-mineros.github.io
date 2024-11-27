@@ -211,7 +211,8 @@
             El segundo clasificado juega contra el tercero.
         </p>
 
-         <table class="tables league-table league-table-6-4">
+         <div style="overflow-x:auto;">
+  <table class="tables league-table league-table-6-4">
     <tr>
         <th>Nombre</th>
         <th>Puntos</th>
@@ -264,6 +265,7 @@
     <td>9</td>
 </tr>
 </table>
+</div>
 
 
          <h2 class="centerText title-lines">Historial de partidas</h2>
@@ -274,6 +276,7 @@
     <input onkeydown='searchInTable()' onkeyup='searchInTable()' type='text' id="searchInput2" placeholder="Segundo jugador">
 </div>
 
+<div style="overflow-x:auto;">
 <table class="tables matches-table" id="historyTable">
     <tr id="header">
         <th>Blancas</th>
@@ -594,12 +597,14 @@
 
 
 </table>
+</div>
               
 
         <!-- -->
          <h3 class="centerText">Fase de playoffs</h3>
          <p class="centerText">Primera semifinal</p>
-         <table class="tables matches-table">
+         <div style="overflow-x:auto;">
+<table class="tables matches-table">
     <tr id="header">
         <th>Blancas</th>
         <th>Negras</th>
@@ -648,9 +653,11 @@
 
 
 </table>
+</div>
         
          <p class="centerText">Segunda semifinal</p>
-         <table class="tables matches-table">
+         <div style="overflow-x:auto;">
+<table class="tables matches-table">
     <tr id="header">
         <th>Blancas</th>
         <th>Negras</th>
@@ -699,9 +706,11 @@
 
 
 </table>
+</div>
          
          <p class="centerText">Final</p>
-         <table class="tables matches-table">
+         <div style="overflow-x:auto;">
+<table class="tables matches-table">
     <tr id="header">
         <th>Blancas</th>
         <th>Negras</th>
@@ -764,40 +773,43 @@
 
 
 </table>
+</div>
 
          <!-- Stats -->
           
         <h2 class="centerText title-lines">Estadísticas</h2>
-        <table class="tables stats-table">
-    <tr>
-      <td>Partidas totales</td>
-      <td>59</td>
-    </tr>
-    <tr>
-      <td>Victorias de blancas</td>
-      <td>24</td>
-    </tr>
-    <tr>
-      <td>Empates</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <td>Victorias de negras</td>
-      <td>27</td>
-    </tr>
-    <tr>
-      <td>Media de movimientos</td>
-      <td>43</td>
-    </tr>
-    <tr>
-      <td>Duración media de partida</td>
-      <td>4m 6s</td>
-    </tr>
-    <tr>
-      <td>Duración media por turno</td>
-      <td>5 segundos</td>
-    </tr>
-   </table>
+        <div style="overflow-x:auto;">
+  <table class="tables stats-table">
+      <tr>
+        <td>Partidas totales</td>
+        <td>59</td>
+      </tr>
+      <tr>
+        <td>Victorias de blancas</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>Empates</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>Victorias de negras</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>Media de movimientos</td>
+        <td>43</td>
+      </tr>
+      <tr>
+        <td>Duración media de partida</td>
+        <td>4m 6s</td>
+      </tr>
+      <tr>
+        <td>Duración media por turno</td>
+        <td>5 segundos</td>
+      </tr>
+  </table>
+</div>
 
          <h4 class="centerText">Clasificación por ELO (al inicio del torneo)</h2>
         <table class="tables elo-ranking podium-table">
