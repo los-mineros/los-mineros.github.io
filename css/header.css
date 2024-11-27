@@ -23,7 +23,6 @@ a.header_no_underline { text-decoration: none; }
 
 .header_title {
     background-color: #111;
-    color: white;
     text-decoration: none;
     font-size: 1.6em;
     padding-right: 0.75em;
@@ -110,4 +109,18 @@ a.header_no_underline { text-decoration: none; }
 .topnav_dropdown:hover .topnav_dropdown_content {
   display: block;
   height: auto;
+}
+
+.header_title_text {}
+.header_title_text_mobile { display: none; }
+
+@media (max-width: 1200px) {
+  .header { font-size: 2.0em; }
+  .header_title_text { display: none; }
+  .header_title_text_mobile { display: inline; }
+}
+
+@media (min-width: 1201px) {
+  .header_title_text { display: inline; }
+  .header_title_text_mobile { display: none; }
 }

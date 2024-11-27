@@ -295,3 +295,8 @@ a, a:visited{
   width: 22em;
   height: auto;
 }
+
+@media (max-width: 1200px) {
+  .content { font-size: 2em; }
+  .explanationBox { max-width: 90%; }
+}

@@ -50,12 +50,6 @@
     color: #d3d3d3;
 }
 
-  
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-
 .edition_type_cw {
     border: solid 0.1em #14a107ea;
     border-radius: 0.1em;
@@ -98,4 +92,9 @@
 }
 .edition_type_bcw:hover {
     background-color: #c9a60b9d;
+}
+
+@media (max-width: 1200px) {
+    .sidenav_editions a { font-size: 4em; }
+    .edition_show_button { font-size: 1.5em; }
 }
