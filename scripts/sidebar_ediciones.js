@@ -1,12 +1,10 @@
 function open_editions_sidenav() {
-    document.getElementById("content").style.marginLeft = "60%";
-    document.getElementById("editions_sidebar").style.width = "60%";
+    document.getElementById("editions_sidebar").style.width = "80%";
     document.getElementById("editions_sidebar").style.display = "block";
     document.getElementById("open_editions_sidebar").style.display = 'none';
   }
   
 function close_editions_sidenav() {
-    document.getElementById("content").style.marginLeft = "0%";
     document.getElementById("editions_sidebar").style.width = "0%";
     document.getElementById("open_editions_sidebar").style.display = "inline-block";
 } 
