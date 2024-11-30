@@ -1,0 +1,122 @@
+
+.pf_result_card {
+    border-radius: 0.5em;
+    width: 60%;
+    background-color: #11111148;
+    padding: 1em;
+    border-color: #8f8f8f;
+    border-width: 0.2em;
+    border-style: solid;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+}
+
+.pf_result_line {
+    display: flex;
+    vertical-align: middle;
+    height: fit-content;
+    border-radius: 0.05em;
+}
+
+.pf_result_logo {
+    height: 2.5em;
+    width: auto;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.pf_result_vertical_line {
+    width: 0.1em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    background-color: #8f8f8f;
+}
+
+.pf_result_name {
+    font-size: 1.5em;
+}
+
+.pfp_result_pos_text {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+.pfp_partial_result_pos_text {
+    font-size: 2.0em;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+.pf_result_pack {
+    display: grid;
+	grid-template-columns: 20% 40% 40%; 
+    margin-left: auto;
+    width: 35em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.pf_result_global {
+    grid-column: 1;
+}
+
+.pf_result_league {
+    grid-column: 2;
+    display: flex;
+}
+
+.pf_result_playoffs {
+    grid-column: 3;
+    display: flex;
+}
+
+.pfp_partial_result_type_text {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1.0em;
+    margin-right: 0.5em;
+}
+
+.pf_result_type_normal {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, rgba(21, 153, 9, 0.63)),
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    repeating-linear-gradient(45deg, #454661 25%, transparent 25%, transparent 75%, #454661 75%, #454661), 
+    repeating-linear-gradient(45deg, #454661 25%, #2f3044 25%, #2f3044 75%, #454661 75%, #454661);
+}
+
+.pf_result_type_blitz {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, rgba(230, 226, 16, 0.616)),
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    repeating-linear-gradient(45deg, #454661 25%, transparent 25%, transparent 75%, #454661 75%, #454661), 
+    repeating-linear-gradient(45deg, #454661 25%, #2f3044 25%, #2f3044 75%, #454661 75%, #454661);
+}
+
+@media screen and (max-width: 1200px) {
+    .pf_result_card { width: 90%; }
+    .pfp_partial_result_type_text { font-size: 1em; }
+    .pf_result_name { 
+        font-size: 1em;
+        margin-right: 0.5em;
+     }
+    .pfp_result_pos_text { font-size: 1.1em; }
+    .pfp_partial_result_pos_text { font-size: 1em; }
+    .pf_result_logo { 
+        height: 0.75em; 
+        margin-left: 0.25em;
+        margin-right: 0.25em;
+    }
+    .pf_result_pack { 
+        max-width: 60%;
+        grid-template-columns: 15% 35% 50%; 
+     }
+}

@@ -163,13 +163,16 @@
 }
 
 .round {
-	display: table-cell;
 	vertical-align: middle;
     padding: 0.3em;
-	max-width: 0.015em;
 	border-left: 0.2em solid #393944;
 	text-align: center;
 }
+
+@media screen and (min-width: 1200px) {
+	.round { display: table-cell; }
+}
+
 
 .round-win { background-color: var(--win_background); }
 .round-draw { background-color: var(--draw_background); }
