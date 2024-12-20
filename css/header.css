@@ -115,7 +115,7 @@ a.header_no_underline { text-decoration: none; }
 .header_title_text_mobile { display: none; }
 
 @media (max-width: 1200px) {
-  .header { font-size: 2.0em; }
+  .header { font-size: 1.8em; }
   .header_title_text { display: none; }
   .header_title_text_mobile { display: inline; }
 }
