@@ -1,0 +1,83 @@
+.countdown-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.countdown-element {
+    font-family: 'Arial Black';
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+    font-size: 2.5em;
+    text-decoration-style: none;
+}
+
+.countdown-element-expl {
+    font-family: 'Hot ink';
+    text-decoration: none;
+}
+
+.countdown-image {
+    width: 15em;
+    height: auto;
+}
+
+.countdown {
+    border-color: #ff7e00;
+    background-color: rgba(240, 142, 13, 0.226);
+    border-radius: 0.3em;
+    border-width: 0.2em;
+    border-style: solid;
+    width: max-content;
+    text-align: center;
+
+    padding: 0.3em;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+
+    animation: coundown-pulse 2s infinite;
+
+    text-decoration: none;
+}
+
+.countdown_playing_text {
+    font-family: 'Hot ink';
+    font-size: 3.5em;
+    
+    animation: playing-pulse 1.5s infinite;
+
+    display: none;
+
+    margin: 0.1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+@keyframes coundown-pulse {
+    0% {
+        border-color: #ff7e00;
+        background-color: rgba(240, 142, 13, 0.226);
+    }
+    50% {
+        border-color: #fa5c00;
+        background-color: rgba(240, 85, 13, 0.226);
+    }
+    100% {
+        border-color: #ff7e00;
+        background-color: rgba(240, 142, 13, 0.226);
+    }
+  }
+  
+@keyframes playing-pulse {
+    0% {
+        color: white;
+    }
+    50% {
+        color: #f75959;
+    }
+    100% {
+        color: white;
+    }
+  }
+  

@@ -2,22 +2,22 @@
 <html>
     <head>
         <title>Chess-Wachín</title>
-        <link rel="stylesheet" href="/css/index.css" />
-        <link rel="stylesheet" href="/css/torunament.css" />
-        <link rel="stylesheet" href="/css/tables.css" />
-        <link rel="stylesheet" href="/css/h2h.css" />
-        <link rel="stylesheet" href="/css/background-default.css" />
-        <link rel="stylesheet" href="/css/header.css" />
-        <link rel="stylesheet" href="/css/sidebar_editions.css" />
-        <link rel="stylesheet" href="/css/news.css" />
+        <link rel="stylesheet" href="../css/torunament.css" />
+        <link rel="stylesheet" href="../css/tables.css" />
+        <link rel="stylesheet" href="../css/background-freestyle.css" />
+        <link rel="stylesheet" href="../css/index.css" />
+        <link rel="stylesheet" href="../css/h2h.css" />
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/sidebar_editions.css" />
 
-        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+        <script src="../scripts/tableSearch.js"></script> 
         
-        <script type="text/javascript" src="/scripts/sidebar_ediciones.js"></script>
+        <script type="text/javascript" src="../scripts/sidebar_ediciones.js"></script>
 
-		<BASE href="./">
+        <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
     </head>
+
 
     <header class="header">
     <h1 class="header_title header_no_underline">        
@@ -51,8 +51,9 @@
     </div>
   </header>
 
-    <body>
-      <button id="open_editions_sidebar" class="edition_show_button" onclick="open_editions_sidenav()">&#9776; EDICIONES</button>
+
+    <body onload="javascript:sortTable()">
+        <button id="open_editions_sidebar" class="edition_show_button" onclick="open_editions_sidenav()">&#9776; EDICIONES</button>
     <div id="editions_sidebar" class="sidenav_editions">
     <a href="javascript:void(0)" class="edition_hide_button" onclick="close_editions_sidenav()">&times; EDICIONES</a>
 
@@ -68,38 +69,90 @@
         <img class="titleGroup" src="/assets/cwc1.png"/>
     </a>
 </div>
+        
         <div class="content" id="content">
+            <div class="centerText titleGroup">
+                <img class="centerText" src="../assets/freestylechesswachin1.png" width="300em" height="auto">
+                <h2>Free-Style Chess-Wachín I</h2>
+            </div>
+            
+             <!-- Clasificación -->
+         <h2 class="centerText title-lines">Fase de liga</h2>
+         <p class="centerText">13 enero 2025 - 26 enero 2025</p>
+         <p class="explanationBox">
+            Cada jugador juega dos partidas de 3 minutos contra cada otro jugador: una con blancas y una con negras.
+            <br>
+            Puntos por victoria: 2, puntos por empate: 1, puntos por derrota: 0.
+            <br>
+            Los 4 primeros jugadores se clasifican para la fase de playoffs:
+            <br>
+            El primer clasificado juega contra el cuarto.
+            El segundo clasificado juega contra el tercero.
+        </p>
 
-            <div class="news_entry">
-    <div class="news_image_and_title">
-        <img class="news_image" src="/assets/freestylechesswachin1.png">
-        <div class="news_content">
-            <h1 class="news_title">¡El Free-Style Chess-Wachín I comenzará el 13 de enero!</h1>
-            <div class="news_date">Viernes, 3 de enero de 2025.</div>
-            El primer torneo de la temporada 2025 comenzará el próximo lunes 13 de enero. Como ya se anunció, esta vez se usarán partidas de ajedrez 960 con las posiciones iniciales de las piezas establecidas de manera aleatoria. De esta manera las aperturas tradicionales no sirven, y se necesitará una mayor creatividad desde el comienzo de la partida.<br><br>Como es habitual, el torneo estará dividido en una fase de liga de ida y vuelta (que durará dos semanas), en la que los cuatro primeros clasificados se clasificarán para los playoffs (formato de playoffs a determinar).
-        </div>
-    </div>
-</div><div class="news_entry">
-    <div class="news_image_and_title">
-        <img class="news_image" src="/assets/partnerchechu.png">
-        <div class="news_content">
-            <h1 class="news_title">Chechu_25 renueva los derechos de transmisión para el Chess-Wachín.</h1>
-            <div class="news_date">Domingo, 22 de diciembre de 2024.</div>
-            Tras el éxito de las transmisiones de semifinales y final del Blitz-Chess-Wachín I, el Chechu se encargará de nuevo de la retransmisión en directo de los playoffs para el siguiente torneo.<br><br>Además, se suma la posibilidad de retransmitir algunos encuentros clave de la fase de liga.
-        </div>
-    </div>
-</div><div class="news_entry">
-    <div class="news_image_and_title">
-        <img class="news_image" src="https://images.chesscomfiles.com/uploads/v1/chess_term/3481da24-7170-11ea-9888-3ff43aeabf2f.8e4060f0.630x354o.f47a7fae87ad@2x.png">
-        <div class="news_content">
-            <h1 class="news_title">La próxima competición del Chess-Wachín se disputará en enero de 2025.</h1>
-            <div class="news_date">Viernes, 20 de diciembre de 2024.</div>
-            Este nuevo torneo usará por primera vez la variante de ajedrez 960, en el que las posiciones iniciales de las piezas se establecen al azar. Además, contará con partidas de 10 minutos.
-        </div>
-    </div>
+         
+
+
+         <h2 class="centerText title-lines">Historial de partidas</h2>
+         
+
+        <!-- -->
+         <h3 class="centerText">Fase de playoffs</h3>
+         <p class="centerText">Primera semifinal</p>
+         
+        
+         <p class="centerText">Segunda semifinal</p>
+         
+         
+         <p class="centerText">Final</p>
+         
+
+         <!-- Stats -->
+          
+        <h2 class="centerText title-lines">Estadísticas</h2>
+        <div style="overflow-x:auto;">
+  <table class="tables stats-table">
+      <tr>
+        <td>Partidas totales</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Victorias de blancas</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Empates</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Victorias de negras</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Media de movimientos</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Duración media de partida</td>
+        <td>0m 0s</td>
+      </tr>
+      <tr>
+        <td>Duración media por turno</td>
+        <td>0 segundos</td>
+      </tr>
+  </table>
 </div>
 
-        </div>       
+         <h4 class="centerText">Clasificación por ELO (al inicio del torneo)</h2>
+        <table class="tables elo-ranking podium-table">
+    <tr>
+        <th>Nombre</th>
+        <th>ELO</th>
+      </tr>
+
+      
+</table>
+
     </body>
 
     <footer class="footer centerText footertitle">

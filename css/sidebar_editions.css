@@ -94,6 +94,30 @@
     background-color: #c9a60b9d;
 }
 
+
+.edition_type_fscw {
+    border: solid 0.1em #e06b0bea;
+    border-radius: 0.1em;
+    transition-duration: 0.2s;
+    color: var(--text_color);
+    font-size: 1em;
+    padding: 0.15em;
+    text-decoration: none;
+    margin: 0.15em;
+}
+
+.edition_type_fscw img {
+    height: 2.2em;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.edition_type_fscw:hover {
+    background-color: #c77d289d;
+}
+
+
 @media (max-width: 1200px) {
     .sidenav_editions a { font-size: 4em; }
     .edition_show_button { font-size: 1.5em; }

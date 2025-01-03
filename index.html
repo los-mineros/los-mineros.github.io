@@ -10,11 +10,15 @@
         <link rel="stylesheet" href="css/header.css" />
         <link rel="stylesheet" href="css/sidebar_editions.css" />
         <link rel="stylesheet" href="/css/news.css" />
+        <link rel="stylesheet" href="/css/countdown.css" />
 
         <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
         
         <script type="text/javascript" src="scripts/sidebar_ediciones.js"></script>
+        <script type="text/javascript" src="scripts/countdown_script.js"></script>
+        <body onload="update_countdown()"></body>
+
 
 		<BASE href="./">
     </head>
@@ -56,6 +60,10 @@
     <div id="editions_sidebar" class="sidenav_editions">
     <a href="javascript:void(0)" class="edition_hide_button" onclick="close_editions_sidenav()">&times; EDICIONES</a>
 
+    <a href="/ediciones/freestylechesswachin1.html" class="edition_type_fscw">
+        <img class="titleGroup" src="/assets/freestylechesswachin1.png"/>
+    </a>
+
     <a href="/ediciones/blitzchesswachin1.html" class="edition_type_bcw">
         <img class="titleGroup" src="/assets/bcw1.png"/>
     </a>
@@ -73,8 +81,42 @@
             <p></p>
           </div>
 
+          <a class="centerText" href="/ediciones/freestylechesswachin1.html">
+            <div class="countdown">
+              <img src="assets/freestylechesswachin1.png" class="centerText countdown-image">
+              
+              <div class="countdown-container" id="countdown">
+                <div>
+                  <b id="days" class="countdown-element">-</b>
+                  <div id="daysexpl" class="countdown-element-expl">DÍAS</div>
+                </div>
+                <div>
+                  <div id="hours" class="countdown-element">-</div>
+                  <div id="hoursexpl" class="countdown-element-expl">HORAS</div>
+                </div>
+                <div>
+                  <div id="minutes" class="countdown-element">-</div>
+                  <div id="minutesexpl" class="countdown-element-expl">MINUTOS</div>
+                </div>
+                <div>
+                  <div id="seconds" class="countdown-element">-</div>
+                  <div id="secondsexpl" class="countdown-element-expl">SEGUNDOS</div>
+                </div>
+                <div id="playingtext" class="countdown_playing_text">EN JUEGO</div>
+              </div>
+            </div>
+          </a>
+
           <h2 class="centerText title-lines">Últimas noticias</h2>
           <div class="news_entry_lite">
+    <div class="news_image_and_title">
+        <img class="news_image_lite" src="/assets/freestylechesswachin1.png">
+        <div class="news_content">
+            <h3 class="news_title"><a href="/news/news.html">¡El Free-Style Chess-Wachín I comenzará el 13 de enero!</a></h3>
+            <div class="news_date">Viernes, 3 de enero de 2025.</div>
+        </div>
+    </div>
+</div><div class="news_entry_lite">
     <div class="news_image_and_title">
         <img class="news_image_lite" src="/assets/partnerchechu.png">
         <div class="news_content">
