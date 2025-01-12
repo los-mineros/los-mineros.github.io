@@ -101,6 +101,13 @@
     repeating-linear-gradient(45deg, #454661 25%, #2f3044 25%, #2f3044 75%, #454661 75%, #454661);
 }
 
+.pf_result_type_freestyle {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, rgba(230, 130, 16, 0.664)),
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    repeating-linear-gradient(45deg, #454661 25%, transparent 25%, transparent 75%, #454661 75%, #454661), 
+    repeating-linear-gradient(45deg, #454661 25%, #2f3044 25%, #2f3044 75%, #454661 75%, #454661);
+}
+
 @media screen and (max-width: 1200px) {
     .pf_result_card { width: 90%; }
     .pfp_partial_result_type_text { font-size: 1em; }
