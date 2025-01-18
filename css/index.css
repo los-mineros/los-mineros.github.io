@@ -243,6 +243,37 @@ a, a:visited{
   margin-right: auto;
 }
 
+.porjugar {
+  background-color: #2f3044;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.porjugar_title {
+  cursor: pointer;
+}
+
+.porjugar_color {
+  text-decoration: dashed;
+  text-decoration-color: blue;
+}
+
+.porjugar_main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.porjugar_subentry {
+  margin-left: 0;
+
+}
+
+
 @keyframes pulse {
   0% {
     background-color: #c9a60b52;
