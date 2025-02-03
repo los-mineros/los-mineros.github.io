@@ -1,0 +1,367 @@
+.wintext {
+    color: #69ca71d3;
+}
+.drawtext {
+    color: #c6cfc6af;
+}
+.losstext {
+    color: rgba(245, 78, 78, 0.616);
+}
+
+.overlayfullCombat {
+    display: flex;
+}
+
+.overlaycombatBackgroundSimple {
+    padding: 0.2em;
+    background: linear-gradient(
+        -72deg,
+        #ca7345,
+        #ffdeca 16%,
+        #ca7345 21%,
+        #ffdeca 24%,
+        #a14521 27%,
+        #ca7345 36%,
+        #ffdeca 45%,
+        #ffdeca 60%,
+        #ca7345 72%,
+        #ffdeca 80%,
+        #ca7345 84%,
+        #732100);
+
+    background-size: 150% 150%;
+
+    animation: pulseSilver 7s ease-in-out 3s infinite running;
+}
+
+.spainBackground {
+    background-image: url(../../assets/overlayProfileSpain.png);
+    background-repeat: no-repeat;
+}
+
+.uyBackground {
+    background-image: url(../assets/overlayProfileUy.png);
+    background-repeat: no-repeat;
+}
+
+.mohaBackground {
+    background-image: url(../assets/overlayProfileMoha.png);
+    background-repeat: no-repeat;
+}
+
+.overlaycombatDisplay {
+    display: flex;
+    margin: auto;
+}
+
+.overlaytitlesmall {
+    font-size: 4em;
+    margin-top: 1em;
+    font-family: 'Hot Ink';
+}
+
+.overlaycombatContent {
+    background: #0f0b0bd5;
+    padding: 0.5em;
+    margin: auto;
+}
+
+.overlayWaiting_Inside_Left {
+    margin-right: auto;
+    vertical-align: middle;
+    margin-right: 1em;
+}
+
+.overlayWaiting_Inside_Right {
+    vertical-align: middle;
+    margin-left: 1em;
+}
+
+.overlayWaiting_Outside_Left {
+    text-align: right;
+}
+
+.overlayWaiting_Outside_Right {
+    text-align: left;
+}
+
+.overlayleftCombat {
+    margin-left: 2em;
+    height: 90%;
+}
+
+.overlayrightCombat {
+    margin-right: 2em;
+    height: 90%;
+}
+
+.overlaycombatPfp {
+    width: 15em;
+    height: auto;
+}
+
+.overlayplayerName {
+    font-size: 2.5em;
+}
+
+.points {
+    font-size: 4.0em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+.overlaycombatStats {
+    padding-top: 16em;
+    padding-bottom: 0em;
+    padding-left: 0.2em;
+    font-size: 1.0em;
+    font-family: 'Hot ink';
+}
+
+.overlaycombatStatsOverride {
+    font-family: 'Times New Roman';
+}
+
+
+/* https://codepen.io/rgfx/pen/gpEzVv */
+.statsBar {
+	width: 100%;
+    height: 0.3em;
+}
+
+.statsBar span {
+    height: 100%;
+    box-sizing: border-box;
+    float: left;  
+}
+
+.statsBarbar1 {
+    background: #69ca71d3;
+}
+
+.statsBarbar2 {
+    background: #c6cfc6af;
+}
+
+.statsBarbar3 {
+    background: rgba(245, 78, 78, 0.616);
+}
+
+body {
+    background-image:
+        linear-gradient(to right, rgba(230, 226, 16, 0.048), rgba(230, 226, 16, 0.575)),
+        linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+        repeating-linear-gradient(45deg, #454661 25%, transparent 25%, transparent 75%, #454661 75%, #454661), 
+        repeating-linear-gradient(45deg, #454661 25%, #2f3044 25%, #2f3044 75%, #454661 75%, #454661);
+
+    background-position: 
+        0 0, 90px 90px,
+        0 0, 90px 90px,
+        0 0, 90px 90px,
+        0 0, 0px 0px;
+
+    background-size:
+    9000px 9000px,
+    180px 180px,
+    180px 180px,
+    180px 180px
+    ;
+
+    animation: pulseXD 15s infinite;
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+
+    background-image: 
+        linear-gradient(
+            to right, 
+            rgba(85, 84, 8, 0.0), 
+            rgba(85, 84, 8, 0.0), 
+            rgba(243, 132, 28, 0.308),
+            rgba(85, 84, 8, 0.0),
+            rgba(85, 84, 8, 0.0)
+            );
+        
+	background-size: 100% 100%;
+}
+
+.backgroundAnimated {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+
+    background-image: 
+        linear-gradient(
+            to right, 
+            rgba(85, 84, 8, 0.0), 
+            rgba(85, 84, 8, 0.0), 
+            rgba(255, 79, 9, 0.144),
+            rgba(85, 84, 8, 0.0),
+            rgba(85, 84, 8, 0.0)
+            );
+        
+    animation: pulseYellow 7s infinite;
+
+	background-size: 100% 100%;
+}
+
+.verticalContainer {
+    width: auto;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bcw1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 36%;
+}
+
+.matchResult {
+    width: 3em;
+    height: 3em;
+
+    border: 0.3em solid rgba(247, 216, 40, 0.774);
+    border-radius: 0.5em;
+
+    margin: 1em;
+}
+
+.waitingRoomPlayerWidth {
+    width: 40em;
+}
+
+.semis {
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+    font-family: 'Hot ink';
+    font-size: 4em;
+    color: #ff6600;
+}
+.VS {
+    font-family: 'Hot ink';
+    font-size: 4em;
+    color: #ff6600;
+}
+.name {
+    font-family: 'Hot ink';
+    font-size: 7em;
+    color: rgba(255, 255, 255, 0.822);
+}
+
+.results {
+}
+
+.view {
+    width: 1079px;
+    height: 706px;
+    
+    border: 0.3em solid rgba(247, 123, 40, 0.774);
+}
+
+@keyframes pulseXD {
+    0% {
+		background-position: 
+            0 0, 90px 90px,
+            0 0, 90px 90px,
+            0 0, 90px 90px,
+            0 0, 0px 0px;
+	}
+	50% {
+		background-position: 
+            0px 0px, 100px 100px,
+            0px 0px, 100px 100px,
+            0px 0px, 100px 100px,
+            0px 0px, 0px 0px;
+	}
+	100% {
+		background-position: 
+            0 0, 90px 90px,
+            0 0, 90px 90px,
+            0 0, 90px 90px,
+            0 0, 0px 0px;
+	}
+  }
+  
+@keyframes pulseYellow {
+    from {
+		transform: translateX(-150vh);
+    }
+    to {
+		transform: translateX(150vh);
+	}
+  }
+  
+@keyframes pulseSilver {
+    0% {
+		background-position: 0% 00%;
+	}
+	50% {
+		background-position: 50% 100%;
+	}
+	100% {
+		background-position: 0% 00%;
+	}
+  }
+  
+
+  /* FLAG: https://jsfiddle.net/GEnUU/24/ */
+  .flag {
+    width: 200px;
+    height: 30px;
+    margin: auto;
+  }
+
+.flag-element {
+  -webkit-animation: oscill 2s ease-in-out infinite alternate;
+  -moz-animation: oscill 2s ease-in-out infinite alternate;
+  -ms-animation: oscill 2s ease-in-out infinite alternate;
+  animation: oscill 2s ease-in-out infinite alternate;
+  background: url('../assets/flagSpain.png');
+  max-width: 100%;
+  background-size: 200px 100%;
+  position: relative;
+  height: 100%;
+  width: 1px;
+  display: inline-block;
+  outline: 1px solid rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes oscill {
+    100% {
+   transform: translateY(3px);
+    }
+}
+
+@-moz-keyframes oscill {
+  100% {
+  transform: translateY(3px) rotate(0.01deg);
+  }
+}
+@-ms-keyframes oscill {
+  100% {
+  transform: translateY(3px);
+  }
+}
+@keyframes oscill {
+  100% {
+  transform: translateY(3px) rotate(0.01deg);
+  }
+}
