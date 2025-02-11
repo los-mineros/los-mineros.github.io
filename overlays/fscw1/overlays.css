@@ -40,12 +40,12 @@
 }
 
 .uyBackground {
-    background-image: url(../assets/overlayProfileUy.png);
+    background-image: url(../../assets/overlayProfileUy.png);
     background-repeat: no-repeat;
 }
 
 .mohaBackground {
-    background-image: url(../assets/overlayProfileMoha.png);
+    background-image: url(../../assets/overlayProfileMoha.png);
     background-repeat: no-repeat;
 }
 
@@ -57,6 +57,10 @@
 .overlaytitlesmall {
     font-size: 4em;
     margin-top: 1em;
+    font-family: 'Hot Ink';
+}
+.overlaytitlesmall_nomargintop {
+    font-size: 3.5em;
     font-family: 'Hot Ink';
 }
 
@@ -101,7 +105,15 @@
 }
 
 .overlayplayerName {
+    font-family: 'Hot ink';
+    color: rgba(255, 255, 255, 0.822);
     font-size: 2.5em;
+}
+
+.overlayplayerName2 {
+    font-family: 'Hot ink';
+    color: rgba(255, 255, 255, 0.822);
+    font-size: 5.5em;
 }
 
 .points {
@@ -234,14 +246,23 @@ body {
     width: 36%;
 }
 
+.fscw1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 36%;
+}
+
 .matchResult {
     width: 3em;
     height: 3em;
 
-    border: 0.3em solid rgba(247, 216, 40, 0.774);
+    border: 0.3em solid #ff6600;
     border-radius: 0.5em;
 
     margin: 1em;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .waitingRoomPlayerWidth {
@@ -249,11 +270,13 @@ body {
 }
 
 .semis {
-    margin-top: 0.5em;
+    margin-top: 0.2em;
     margin-bottom: 0em;
     font-family: 'Hot ink';
-    font-size: 4em;
+    font-size: 2em;
     color: #ff6600;
+    text-align: center;
+    vertical-align: middle;
 }
 .VS {
     font-family: 'Hot ink';
@@ -267,6 +290,7 @@ body {
 }
 
 .results {
+    margin-top: 2em;
 }
 
 .view {
