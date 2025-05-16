@@ -13,7 +13,6 @@
 }
 
 .countdown-element-expl {
-    font-family: 'Hot ink';
     text-decoration: none;
 }
 
@@ -23,8 +22,8 @@
 }
 
 .countdown {
-    border-color: #ff7e00;
-    background-color: rgba(240, 142, 13, 0.226);
+    border-color: #108d00b9;
+    background-color: rgba(85, 248, 53, 0.226);
     border-radius: 0.3em;
     border-width: 0.2em;
     border-style: solid;
@@ -42,7 +41,6 @@
 }
 
 .countdown_playing_text {
-    font-family: 'Hot ink';
     font-size: 3.5em;
     
     animation: playing-pulse 1.5s infinite;
@@ -56,16 +54,16 @@
 
 @keyframes coundown-pulse {
     0% {
-        border-color: #ff7e00;
-        background-color: rgba(240, 142, 13, 0.226);
+        border-color: #259c0d;
+        background-color: rgba(13, 240, 100, 0.226);
     }
     50% {
-        border-color: #fa5c00;
-        background-color: rgba(240, 85, 13, 0.226);
+        border-color: #48d371;
+        background-color: rgba(10, 161, 68, 0.226);
     }
     100% {
-        border-color: #ff7e00;
-        background-color: rgba(240, 142, 13, 0.226);
+        border-color: #259c0d;
+        background-color: rgba(13, 240, 100, 0.226);
     }
   }
   

@@ -1,24 +1,20 @@
-
-
 <!DOCTYPE html>
 <html>
     <head>
         <title>Chess-Wachín</title>
-        <link rel="stylesheet" href="/css/index.css" />
-        <link rel="stylesheet" href="/css/torunament.css" />
-        <link rel="stylesheet" href="/css/tables.css" />
-        <link rel="stylesheet" href="/css/h2h.css" />
-        <link rel="stylesheet" href="/css/background-default.css" />
-        <link rel="stylesheet" href="/css/header.css" />
-        <link rel="stylesheet" href="/css/sidebar_editions.css" />
-        <link rel="stylesheet" href="/css/news.css" />
+        <link rel="stylesheet" href="../css/index.css" />
+        <link rel="stylesheet" href="../css/torunament.css" />
+        <link rel="stylesheet" href="../css/tables.css" />
+        <link rel="stylesheet" href="../css/background-chess.css" />
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/sidebar_editions.css" />
 
-        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+        <script src="../scripts/tableSearch.js"></script> 
         
-        <script type="text/javascript" src="/scripts/sidebar_ediciones.js"></script>
+        <script type="text/javascript" src="../scripts/sidebar_ediciones.js"></script>
 
-		<BASE href="./">
+        <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
     </head>
 
     <header class="header">
@@ -54,7 +50,7 @@
   </header>
 
     <body>
-      <button id="open_editions_sidebar" class="edition_show_button" onclick="open_editions_sidenav()">&#9776; EDICIONES</button>
+        <button id="open_editions_sidebar" class="edition_show_button" onclick="open_editions_sidenav()">&#9776; EDICIONES</button>
     <div id="editions_sidebar" class="sidenav_editions">
     <a href="javascript:void(0)" class="edition_hide_button" onclick="close_editions_sidenav()">&times; EDICIONES</a>
 
@@ -74,20 +70,88 @@
         <img class="titleGroup" src="/assets/cwc1.png"/>
     </a>
 </div>
+        
         <div class="content" id="content">
-
-            <div class="news_entry">
-                <div class="news_image_and_title">
-                    <img class="news_image" src="/assets/freestylechesswachin1.png">
-                    <div class="news_content">
-                        <h1 class="news_title">¡El Free-Style Chess-Wachín I comenzará el 13 de enero!</h1>
-                        <div class="news_date">Viernes, 3 de enero de 2025.</div>
-                        El primer torneo de la temporada 2025 comenzará el próximo lunes 13 de enero. Como ya se anunció, esta vez se usarán partidas de ajedrez 960 con las posiciones iniciales de las piezas establecidas de manera aleatoria. De esta manera las aperturas tradicionales no sirven, y se necesitará una mayor creatividad desde el comienzo de la partida.<br><br>Como es habitual, el torneo estará dividido en una fase de liga de ida y vuelta (que durará dos semanas), en la que los cuatro primeros clasificados se clasificarán para los playoffs (formato de playoffs a determinar).
-                    </div>
-                </div>
+            <div class="centerText titleGroup">
+                <img class="centerText" src="../assets/chesswachin2title.png" width="400em" height="auto">
+                <h2>Chess-Wachín II</h2>
             </div>
 
-        </div>       
+        <!-- Torneo -->
+
+         <!-- Clasificación -->
+         <h2 class="centerText title-lines">Fase de liga</h2>
+         <p class="centerText">19 mayo 2025 - 1 junio 2025</p>
+         <p class="explanationBox">
+            Cada jugador juega una partida de 10 minutos contra cada otro jugador.
+            <br>
+            Puntos por victoria: 2, puntos por empate: 1, puntos por derrota: 0.
+            <br>
+            <br>
+            Los 3 primeros jugadores se clasifican para la fase de playoffs:
+            <br>
+            &emsp;El primer clasificado juega contra el ganador de la fase clasificatoria.
+            <br>
+            &emsp;El segundo clasificado juega contra el tercero.
+            <br>
+            <br>
+            Los jugadores en posiciones 4º, 5º, 6º y 7º jugarán la fase clasificatoria:
+            <br>
+            &emsp;El 4º juega contra el 7º.<br>
+            &emsp;El 5º juega contra el 6º.<br>
+            &emsp;Los ganadores de ambas eliminatorias se enfrentan en la final, y el ganador avanza a playoffs.
+        </p>
+
+        
+
+        
+        
+         <!-- Stats -->
+          
+        <h2 class="centerText title-lines">Estadísticas</h2>
+        <div style="overflow-x:auto;">
+  <table class="tables stats-table">
+      <tr>
+        <td>Partidas totales</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Victorias de blancas</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Empates</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Victorias de negras</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Media de movimientos</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Duración media de partida</td>
+        <td>0m 0s</td>
+      </tr>
+      <tr>
+        <td>Duración media por turno</td>
+        <td>0 segundos</td>
+      </tr>
+  </table>
+</div>
+
+        <h4 class="centerText">Clasificación por ELO (al inicio del torneo)</h2>
+        <table class="tables elo-ranking podium-table">
+    <tr>
+        <th>Nombre</th>
+        <th>ELO</th>
+      </tr>
+
+      
+</table>
+          
     </body>
 
     <footer class="footer centerText footertitle">
@@ -95,4 +159,5 @@
     <p>Chess-Wachín Series, organizado por oskiyu y martilux2580.
     <br>Página generada con <a href="https://github.com/oskiyu/ChessWachinSSG">ChessWachinSSG 1.3.3.0</a>.</p>
 </footer>
+      
 </html>

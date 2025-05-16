@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Jan 13, 2025 00:00:00").getTime();
+var countDownDate = new Date("May 19, 2025 00:00:00").getTime();
           
 function update_countdown() {
   // Get today's date and time
