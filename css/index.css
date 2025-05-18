@@ -18,10 +18,12 @@
   --win_background: #69ca7177;
   --draw_background: #98a19877;
   --loss_background: rgba(247, 37, 37, 0.329);
+  --semiwin_background: #d9db6677;
   
   --win_background_hover: #69ca71d3;
   --draw_background_hover: #98a198af;
   --loss_background_hover: rgba(247, 37, 37, 0.616);
+  --semiwin_background_hover: #d3d153d3;
 }
 
 /* ------ General ------ */
