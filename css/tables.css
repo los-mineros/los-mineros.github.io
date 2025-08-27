@@ -55,6 +55,30 @@
 .podium-table tr:nth-child(4):hover { background: var(--bronze_hover); }
 
 
+/* Tabla de ranking de temporada. */
+.season-ranking td:nth-child(1) { text-align: right; }
+.season-ranking td:nth-child(5) { text-align: right; }
+.season-ranking td:nth-child(6) { text-align: right; }
+.season-ranking td:nth-child(7) { text-align: right; }
+.season-ranking td:nth-child(8) { text-align: right; }
+.season-ranking td:nth-child(9) { text-align: right; }
+
+.season-ranking tr:nth-child( 2) { background: var(--win_background); }
+.season-ranking tr:nth-child( 3) { background: var(--win_background); }
+.season-ranking tr:nth-child( 4) { background: var(--win_background); }
+.season-ranking tr:nth-child( 5) { background: var(--win_background); }
+.season-ranking tr:nth-child( 6) { background: var(--loss_background); }
+.season-ranking tr:nth-child( 7) { background: var(--loss_background); }
+.season-ranking tr:nth-child( 8) { background: var(--loss_background); }
+.season-ranking tr:nth-child( 9) { background: var(--loss_background); }
+.season-ranking tr:nth-child(10) { background: var(--loss_background); }
+.season-ranking tr:nth-child(11) { background: var(--loss_background); }
+.season-ranking tr:nth-child(12) { background: var(--loss_background); }
+.season-ranking tr:nth-child(13) { background: var(--loss_background); }
+.season-ranking tr:nth-child(14) { background: var(--loss_background); }
+.season-ranking tr:nth-child(15) { background: var(--loss_background); }
+
+
 /* Tabla de ranking histórico. */
 .historic-ranking td:nth-child(1) { text-align: right; }
 .historic-ranking td:nth-child(5) { text-align: right; }
