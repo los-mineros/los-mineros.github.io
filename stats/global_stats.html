@@ -131,6 +131,24 @@
 
               ]);
       
+              var playersdata = google.visualization.arrayToDataTable([
+                ['Competición', 'Jugadores'],
+                ['Chess-Wachín I', 6],
+['Blitz-Chess-Wachín I', 7],
+['Free-Style Chess-Wachín I', 7],
+['Chess-Wachín II', 10],
+
+              ]);
+      
+              var gamespercompdata = google.visualization.arrayToDataTable([
+                ['Competición', 'Partidas'],
+                ['Chess-Wachín I', 42],
+['Blitz-Chess-Wachín I', 59],
+['Free-Style Chess-Wachín I', 56],
+['Chess-Wachín II', 60],
+
+              ]);
+      
               var options = {
                 title: "Puntos",
                 backgroundColor: { fill:'transparent' },
@@ -171,6 +189,8 @@
               var chart4 = new google.visualization.BarChart(document.getElementById('parts'));
               var chart5 = new google.visualization.BarChart(document.getElementById('finals'));
               var chart6 = new google.visualization.BarChart(document.getElementById('playoffs'));
+              var chart7 = new google.visualization.AreaChart(document.getElementById('playerspercomp'));
+              var chart8 = new google.visualization.AreaChart(document.getElementById('gamespercomp'));
       
               chart .draw(data, options);
 
@@ -188,6 +208,13 @@
 
               options.title = "Clasificaciones a playoffs";
               chart6.draw(qualydata, options);
+
+              options.vAxis.minValue = 0;
+              options.title = "Jugadores por torneo";
+              chart7.draw(playersdata, options);
+              
+              options.title = "Partidas por torneo";
+              chart8.draw(gamespercompdata, options);
             }
           </script>
       
@@ -251,18 +278,59 @@
         
         <div class="content" id="content">
 
+                <h2 class="centerText">General</h2>
+
+          <div style="overflow-x:auto;">
+  <table class="tables stats-table">
+      <tr>
+        <td>Campeonatos jugados</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Partidas totales</td>
+        <td>217</td>
+      </tr>
+      <tr>
+        <td>Tiempo total de juego</td>
+        <td>31h 0m 50s</td>
+      </tr>
+      <tr>
+        <td>Turnos jugados</td>
+        <td>8557</td>
+      </tr>
+      <tr>
+        <td>Victorias de blancas</td>
+        <td>88 (40%)</td>
+      </tr>
+      <tr>
+        <td>Empates</td>
+        <td>28 (12%)</td>
+      </tr>
+      <tr>
+        <td>Victorias de negras</td>
+        <td>101 (46%)</td>
+      </tr>
+  </table>
+</div>
+
+                <div style="display: grid; grid-template-columns: 2fr 2fr; margin-left: auto; margin-right: auto; width: 60%;">
+                    <div class="piechart centerText" id="playerspercomp"></div>
+                    <div class="piechart centerText" id="gamespercomp"></div>
+                </div>
+
             <div class="centerText titleGroup">
                 Estadísticas globales
             </div>
 
-                <h2 class="centerText">Rankings</h2>
-                <div class="piechart centerText" id="barchart_values"></div>
-                <div class="piechart centerText" id="wins"></div>
-                <div class="piechart centerText" id="games"></div>
-                <div class="piechart centerText" id="parts"></div>
-                <div class="piechart centerText" id="finals"></div>
-                <div class="piechart centerText" id="playoffs"></div>
-                
+                    <h2 class="centerText">Rankings</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; margin-left: auto; margin-right: auto; width: 60%;">
+                    <div class="piechart centerText" id="barchart_values"></div>
+                    <div class="piechart centerText" id="wins"></div>
+                    <div class="piechart centerText" id="games"></div>
+                    <div class="piechart centerText" id="parts"></div>
+                    <div class="piechart centerText" id="finals"></div>
+                    <div class="piechart centerText" id="playoffs"></div>
+                </div>
             </div>
 
         </div>
@@ -271,6 +339,6 @@
     <footer class="footer centerText footertitle">
     <img class="lwmimage" src="/assets/lwm.png" width=50em height=auto/>
     <p>Chess-Wachín Series, organizado por oskiyu y martilux2580.
-    <br>Página generada con <a href="https://github.com/oskiyu/ChessWachinSSG">ChessWachinSSG 1.5.1.0</a>.</p>
+    <br>Página generada con <a href="https://github.com/oskiyu/ChessWachinSSG">ChessWachinSSG 1.5.2.0</a>.</p>
 </footer> 
 </html>
