@@ -24,28 +24,170 @@
             function drawChart() {
       
               var data = google.visualization.arrayToDataTable([
-                ['Task', 'Hours per Day'],
-                ['Victorias',   0],
-                ['Empates',     0],
-                ['Derrotas',    0]
+                ['Jugador', 'Puntos'],
+                ['martilux2580', 134],
+['oskiyu2', 86],
+['charliecc13', 59],
+['Epsilon3236', 53],
+['Chechu_25', 32],
+['Ramboromir', 20],
+['MrMhem', 18],
+['Joderio99', 13],
+['AnnakinVader67', 12],
+['josejo3', 10],
+['Alberto17MG', 9],
+['DonJavier01', 0],
+['Alvew', 0],
+
+              ]);
+      
+              var winsdata = google.visualization.arrayToDataTable([
+                ['Jugador', 'Victorias'],
+                ['martilux2580', 60],
+['oskiyu2', 39],
+['charliecc13', 26],
+['Epsilon3236', 25],
+['Chechu_25', 13],
+['Ramboromir', 7],
+['MrMhem', 6],
+['Joderio99', 6],
+['AnnakinVader67', 6],
+['josejo3', 5],
+['Alberto17MG', 2],
+['DonJavier01', 0],
+['Alvew', 0],
+
+              ]);
+      
+              var gamesdata = google.visualization.arrayToDataTable([
+                ['Jugador', 'Partidas jugadas'],
+                ['martilux2580', 82],
+['oskiyu2', 73],
+['charliecc13', 60],
+['Chechu_25', 53],
+['Ramboromir', 43],
+['Epsilon3236', 38],
+['Alberto17MG', 34],
+['MrMhem', 27],
+['AnnakinVader67', 13],
+['Joderio99', 12],
+['josejo3', 11],
+['DonJavier01', 0],
+['Alvew', 0],
+
+              ]);
+      
+              var participationsdata = google.visualization.arrayToDataTable([
+                ['Jugador', 'Campeonatos jugados'],
+                ['martilux2580', 4],
+['oskiyu2', 4],
+['charliecc13', 4],
+['Chechu_25', 4],
+['Ramboromir', 4],
+['Alberto17MG', 3],
+['Epsilon3236', 2],
+['MrMhem', 2],
+['Joderio99', 1],
+['AnnakinVader67', 1],
+['josejo3', 1],
+['DonJavier01', 0],
+['Alvew', 0],
+
+              ]);
+      
+              var qualydata = google.visualization.arrayToDataTable([
+                ['Jugador', 'Clasificaciones a playoffs (TOP 4)'],
+                ['martilux2580', 4],
+['oskiyu2', 4],
+['charliecc13', 3],
+['Epsilon3236', 2],
+['Chechu_25', 2],
+['MrMhem', 1],
+['Ramboromir', 0],
+['Joderio99', 0],
+['AnnakinVader67', 0],
+['josejo3', 0],
+['Alberto17MG', 0],
+['DonJavier01', 0],
+['Alvew', 0],
+
+              ]);
+      
+              var finalsdata = google.visualization.arrayToDataTable([
+                ['Jugador', 'Finales jugadas'],
+                ['martilux2580', 4],
+['Epsilon3236', 2],
+['oskiyu2', 2],
+['charliecc13', 0],
+['Chechu_25', 0],
+['Ramboromir', 0],
+['MrMhem', 0],
+['Joderio99', 0],
+['AnnakinVader67', 0],
+['josejo3', 0],
+['Alberto17MG', 0],
+['DonJavier01', 0],
+['Alvew', 0],
+
               ]);
       
               var options = {
-                slices: {
-                    0: { color: 'green' },
-                    1: { color: 'gray' },
-                    2: { color: 'red' },
-                },
+                title: "Puntos",
                 backgroundColor: { fill:'transparent' },
                 legend: {
                     position: 'bottom',
                     textStyle: {color: 'white' }
-                }
+                },
+                titleTextStyle: { color: '#FFF' },
+                hAxis: {
+                  color: '#FFF',
+                },
+                vAxis: {
+                  color: '#FFF',
+                },
+                hAxis: {
+              textStyle: {
+                        color: '#ffffff'
+                    }
+                },
+                vAxis: {
+                    textStyle: {
+                        color: '#ffffff'
+                    }
+                },
+                legend: {
+                    textStyle: {
+                        color: '#ffffff'
+                    }
+                },
+                titleTextStyle: {
+                    color: '#ffffff'
+          }
               };
       
-              var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+              var chart  = new google.visualization.BarChart(document.getElementById('barchart_values'));
+              var chart2 = new google.visualization.BarChart(document.getElementById('wins'));
+              var chart3 = new google.visualization.BarChart(document.getElementById('games'));
+              var chart4 = new google.visualization.BarChart(document.getElementById('parts'));
+              var chart5 = new google.visualization.BarChart(document.getElementById('finals'));
+              var chart6 = new google.visualization.BarChart(document.getElementById('playoffs'));
       
-              chart.draw(data, options);
+              chart .draw(data, options);
+
+              options.title = "Victorias";
+              chart2.draw(winsdata, options);
+
+              options.title = "Partidas jugadas";
+              chart3.draw(gamesdata, options);
+
+              options.title = "Campeonatos jugados";
+              chart4.draw(participationsdata, options);
+
+              options.title = "Finales jugadas";
+              chart5.draw(finalsdata, options);
+
+              options.title = "Clasificaciones a playoffs";
+              chart6.draw(qualydata, options);
             }
           </script>
       
@@ -110,157 +252,17 @@
         <div class="content" id="content">
 
             <div class="centerText titleGroup">
-                <div class="pfp_country_card pfp_country_card_spain">
-    <div class="pfp_card">
-        <div class="pfp_card_line">
-            <div class="centerText">
-                <img src="/assets/defaultpfp.svg" class="pfp player_pf_name centerText">
-                <span class="player_pf_name ">DonJavier01</span></img>
-            </div>
-            
-            <span class="pfp_global_ranking_card pfp_logros_text"></span>
-            
-            <div class="pfp_global_ranking_card">
-                <span class="pfp_global_ranking_text">Global Ranking</span>
-                <p class="pfp_global_ranking_position ">#12</p>
-            </div>
-        </div>
-    </div>
-</div>
+                Estadísticas globales
             </div>
 
-                <h2 class="centerText">Records</h2>
-                <p class="explanationBox">
-                    Mejor racha de victorias: 0 (en curso)
-<br>
-Mejor racha sin perder: 0 (en curso)
-<br>
-Mayor racha de derrotas: 0 (en curso)
-<br>
-<br>
-Más puntos en una fase de liga: 0 ()
-<br>
-Más victorias en una fase de liga: 0 ()
-                </p>  
+                <h2 class="centerText">Rankings</h2>
+                <div class="piechart centerText" id="barchart_values"></div>
+                <div class="piechart centerText" id="wins"></div>
+                <div class="piechart centerText" id="games"></div>
+                <div class="piechart centerText" id="parts"></div>
+                <div class="piechart centerText" id="finals"></div>
+                <div class="piechart centerText" id="playoffs"></div>
                 
-                <div class="centerText pf_result_card" style="overflow-x:auto;">
-    <h2>Resultados</h2>
-
-    
-    
-</div>
-
-                <div class="centerText">
-                <h2>Historial</h2>
-                <h4>Chess-Wachín I</h4>
-<div>
-    
-</div><h4>Blitz-Chess-Wachín I</h4>
-<div>
-    
-</div><h4>Free-Style Chess-Wachín I</h4>
-<div>
-    
-</div><h4>Chess-Wachín II</h4>
-<div>
-    
-</div>
-                
-                <h4>Total:</h4>
-                <div class="piechart centerText" id="piechart"></div>
-
-                <h4>Por jugador:</h4>
-
-<table class="tables">
-    <tr><td>Contra</td><td>Victorias</td><td>Empates</td><td>Derrotas</td></tr>
-
-    <tr>
-    <td class="matchdraw">
-        <a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a>
-    </td>
-    <td class="matchwin">0</td>
-    <td class="matchdraw">0</td>
-    <td class="matchloss">0</td>
-</tr><tr>
-    <td class="matchdraw">
-        <a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a>
-    </td>
-    <td class="matchwin">0</td>
-    <td class="matchdraw">0</td>
-    <td class="matchloss">0</td>
-</tr><tr>
-    <td class="matchdraw">
-        <a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a>
-    </td>
-    <td class="matchwin">0</td>
-    <td class="matchdraw">0</td>
-    <td class="matchloss">0</td>
-</tr><tr>
-    <td class="matchdraw">
-        <a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a>
-    </td>
-    <td class="matchwin">0</td>
-    <td class="matchdraw">0</td>
-    <td class="matchloss">0</td>
-</tr><tr>
-    <td class="matchdraw">
-        <a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a>
-    </td>
-    <td class="matchwin">0</td>
-    <td class="matchdraw">0</td>
-    <td class="matchloss">0</td>
-</tr><tr>
-    <td class="matchdraw">
-        <a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a>
-    </td>
-    <td class="matchwin">0</td>
-    <td class="matchdraw">0</td>
-    <td class="matchloss">0</td>
-</tr><tr>
-    <td class="matchdraw">
-        <a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a>
-    </td>
-    <td class="matchwin">0</td>
-    <td class="matchdraw">0</td>
-    <td class="matchloss">0</td>
-</tr><tr>
-    <td class="matchdraw">
-        <a href="/perfiles/Epsilon3236.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Epsilon3236</a>
-    </td>
-    <td class="matchwin">0</td>
-    <td class="matchdraw">0</td>
-    <td class="matchloss">0</td>
-</tr><tr>
-    <td class="matchdraw">
-        <a href="/perfiles/Joderio99.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Joderio99</a>
-    </td>
-    <td class="matchwin">0</td>
-    <td class="matchdraw">0</td>
-    <td class="matchloss">0</td>
-</tr><tr>
-    <td class="matchdraw">
-        <a href="/perfiles/josejo3.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> josejo3</a>
-    </td>
-    <td class="matchwin">0</td>
-    <td class="matchdraw">0</td>
-    <td class="matchloss">0</td>
-</tr><tr>
-    <td class="matchdraw">
-        <a href="/perfiles/AnnakinVader67.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> AnnakinVader67</a>
-    </td>
-    <td class="matchwin">0</td>
-    <td class="matchdraw">0</td>
-    <td class="matchloss">0</td>
-</tr><tr>
-    <td class="matchdraw">
-        <a href="/perfiles/Alvew.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Alvew</a>
-    </td>
-    <td class="matchwin">0</td>
-    <td class="matchdraw">0</td>
-    <td class="matchloss">0</td>
-</tr>
-
-</table>
             </div>
 
         </div>
