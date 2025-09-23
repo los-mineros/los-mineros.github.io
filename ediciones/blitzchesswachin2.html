@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chess-Wachín</title>
+        <link rel="stylesheet" href="../css/torunament.css" />
+        <link rel="stylesheet" href="../css/tables.css" />
+        <link rel="stylesheet" href="../css/background-blitz.css" />
+        <link rel="stylesheet" href="../css/index.css" />
+        <link rel="stylesheet" href="../css/h2h.css" />
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/sidebar_editions.css" />
+        <link rel="stylesheet" href="../css/porjugar.css" />
+
+        <script src="../scripts/tableSearch.js"></script> 
+        
+        <script type="text/javascript" src="../scripts/sidebar_ediciones.js"></script>
+
+        <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+    </head>
+
+
+    <header class="header">
+    <h1 class="header_title header_no_underline">        
+      <a href="/index.html" class="header_no_underline"><img class="header_img" src="/assets/chess wachin logo.png"/><span class="header_no_underline header_title_text">CHESS WACHÍN SERIES</span><span class="header_title_text_mobile">CWS</span></a>
+    </h1>
+    <div class="topnav">
+      <a class="topnav_element" href="/index.html">INICIO</a>
+      <a class="topnav_element" href="/news/news.html">NOTICIAS</a>
+
+      <!--<div class="topnav_element topnav_dropdown">
+        EDICIONES
+
+        <div class="topnav_dropdown_content">
+          <a href="ediciones/blitzchesswachin1.html" class="topbuttonbcw">
+            <img class="titleGroup" src="assets/BlitzChessWachinMini.png"/>
+            Blitz-Chess-Wachín I
+          </a>
+          <a href="ediciones/chesswachin1.html" class="topbuttoncw">
+            <img class="titleGroup" src="assets/ChessWachinMini.png"/>
+            Chess-Wachín I
+          </a>
+        </div>
+      </div>-->
+      <div class="topnav_element topnav_dropdown">
+        JUGADORES
+
+        <div class="topnav_dropdown_content topnav_player_content">
+            <a href="/perfiles/oskiyu2.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a><a href="/perfiles/martilux2580.html" class="enlaceBandera topnav_player"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a><a href="/perfiles/charliecc13.html" class="enlaceBandera topnav_player"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a><a href="/perfiles/MrMhem.html" class="enlaceBandera topnav_player"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a><a href="/perfiles/Chechu_25.html" class="enlaceBandera topnav_player"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a><a href="/perfiles/Ramboromir.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a><a href="/perfiles/Alberto17MG.html" class="enlaceBandera topnav_player"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a><a href="/perfiles/Epsilon3236.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> Epsilon3236</a><a href="/perfiles/Joderio99.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> Joderio99</a><a href="/perfiles/josejo3.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> josejo3</a><a href="/perfiles/AnnakinVader67.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> AnnakinVader67</a><a href="/perfiles/DonJavier01.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> DonJavier01</a><a href="/perfiles/Alvew.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> Alvew</a><a href="/perfiles/FranSuoo.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> FranSuoo</a>
+        </div>
+      </div>
+      
+      <a class="topnav_element" href="/stats/global_stats.html">ESTADÍSTICAS</a>
+    </div>
+  </header>
+
+
+    <body onload="javascript:sortTable()">
+        <button id="open_editions_sidebar" class="edition_show_button" onclick="open_editions_sidenav()">&#9776; EDICIONES</button>
+    <div id="editions_sidebar" class="sidenav_editions">
+    <a href="javascript:void(0)" class="edition_hide_button" onclick="close_editions_sidenav()">&times; EDICIONES</a>
+
+    <a href="/ediciones/blitzchesswachin2.html" class="edition_type_bcw">
+        <img class="titleGroup" src="/assets/bcw2.png"/>
+    </a>
+
+    <a href="/ediciones/chesswachin2.html" class="edition_type_cw">
+        <img class="titleGroup" src="/assets/chesswachin2title.png"/>
+    </a>
+
+    <a href="/ediciones/freestylechesswachin1.html" class="edition_type_fscw">
+        <img class="titleGroup" src="/assets/freestylechesswachin1.png"/>
+    </a>
+
+    <a href="/ediciones/blitzchesswachin1.html" class="edition_type_bcw">
+        <img class="titleGroup" src="/assets/bcw1.png"/>
+    </a>
+
+    <a href="/ediciones/chesswachin1.html" class="edition_type_cw">
+        <img class="titleGroup" src="/assets/cwc1.png"/>
+    </a>
+</div>
+        
+        <div class="content" id="content">
+            <div class="centerText titleGroup">
+                <img class="centerText" src="../assets/bcw2.png" width="300em" height="auto">
+                <h2>Blitz-Chess-Wachín II</h2>
+            </div>
+                        
+        
+             <!-- Clasificación -->
+         <h2 class="centerText title-lines">Fase de liga</h2>
+         <p class="centerText">24 septiembre 2025 - 8 octubre 2025</p>
+         <p class="explanationBox">
+            Cada jugador juega una partida de 3 minutos contra cada otro jugador (una con blancas y una con negras).<br>
+            Puntos por victoria: 2, puntos por empate: 1, puntos por derrota: 0.
+            <br><br>
+            Los 3 primeros jugadores se clasifican para la fase de playoffs:<br>
+            El primer clasificado juega contra el ganador de la fase clasificatoria.<br>
+            El segundo clasificado juega contra el tercero.
+            <br><br>
+            Los jugadores en posiciones 4º, 5º, 6º y 7º jugarán la fase clasificatoria:<br>
+            El 4º juega contra el 7º.<br>
+            El 5º juega contra el 6º.<br>
+            Los ganadores de ambas eliminatorias se enfrentan en la final, y el ganador avanza a playoffs. 
+        </p>
+
+         <div style="overflow-x:auto;">
+  <table class="tables league-table league-table-10-3-4">
+    <tr>
+        <th></th>
+        <th>Nombre</th>
+        <th>Puntos</th>
+        <th>Victorias</th>
+        <th>Empates</th>
+        <th>Derrotas</th>
+      </tr>
+
+      <tr>
+    <td>#1</td>
+    <td><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a> </td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+</tr><tr>
+    <td>#2</td>
+    <td><a href="/perfiles/Joderio99.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Joderio99</a> </td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+</tr><tr>
+    <td>#3</td>
+    <td><a href="/perfiles/DonJavier01.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> DonJavier01</a> </td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+</tr><tr>
+    <td>#4</td>
+    <td><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a> </td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+</tr><tr>
+    <td>#5</td>
+    <td><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a> </td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+</tr><tr>
+    <td>#6</td>
+    <td><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a> </td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+</tr><tr>
+    <td>#7</td>
+    <td><a href="/perfiles/FranSuoo.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> FranSuoo</a> </td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+</tr><tr>
+    <td>#8</td>
+    <td><a href="/perfiles/Alvew.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Alvew</a> </td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+</tr><tr>
+    <td>#9</td>
+    <td><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a> </td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+</tr>
+</table>
+</div>
+
+         <details class="porjugar">
+    <summary><h4 style="display: inline !important" class="porjugar_title">Partidas por jugar</h4></summary>
+    
+    <div>
+    <h4 class="porjugar_main"><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></h4>
+
+    <div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Joderio99</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Joderio99</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra DonJavier01</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra DonJavier01</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra charliecc13</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra charliecc13</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Ramboromir</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Ramboromir</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Chechu_25</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Chechu_25</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra FranSuoo</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra FranSuoo</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Alvew</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Alvew</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Alberto17MG</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Alberto17MG</div><br>
+</div><div>
+    <h4 class="porjugar_main"><a href="/perfiles/Joderio99.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Joderio99</a></h4>
+
+    <div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra oskiyu2</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra oskiyu2</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra DonJavier01</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra DonJavier01</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra charliecc13</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra charliecc13</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Ramboromir</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Ramboromir</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Chechu_25</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Chechu_25</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra FranSuoo</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra FranSuoo</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Alvew</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Alvew</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Alberto17MG</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Alberto17MG</div><br>
+</div><div>
+    <h4 class="porjugar_main"><a href="/perfiles/DonJavier01.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> DonJavier01</a></h4>
+
+    <div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra oskiyu2</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra oskiyu2</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Joderio99</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Joderio99</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra charliecc13</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra charliecc13</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Ramboromir</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Ramboromir</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Chechu_25</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Chechu_25</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra FranSuoo</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra FranSuoo</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Alvew</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Alvew</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Alberto17MG</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Alberto17MG</div><br>
+</div><div>
+    <h4 class="porjugar_main"><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></h4>
+
+    <div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra oskiyu2</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra oskiyu2</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Joderio99</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Joderio99</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra DonJavier01</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra DonJavier01</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Ramboromir</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Ramboromir</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Chechu_25</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Chechu_25</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra FranSuoo</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra FranSuoo</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Alvew</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Alvew</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Alberto17MG</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Alberto17MG</div><br>
+</div><div>
+    <h4 class="porjugar_main"><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></h4>
+
+    <div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra oskiyu2</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra oskiyu2</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Joderio99</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Joderio99</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra DonJavier01</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra DonJavier01</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra charliecc13</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra charliecc13</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Chechu_25</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Chechu_25</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra FranSuoo</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra FranSuoo</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Alvew</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Alvew</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Alberto17MG</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Alberto17MG</div><br>
+</div><div>
+    <h4 class="porjugar_main"><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></h4>
+
+    <div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra oskiyu2</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra oskiyu2</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Joderio99</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Joderio99</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra DonJavier01</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra DonJavier01</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra charliecc13</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra charliecc13</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Ramboromir</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Ramboromir</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra FranSuoo</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra FranSuoo</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Alvew</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Alvew</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Alberto17MG</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Alberto17MG</div><br>
+</div><div>
+    <h4 class="porjugar_main"><a href="/perfiles/FranSuoo.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> FranSuoo</a></h4>
+
+    <div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra oskiyu2</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra oskiyu2</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Joderio99</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Joderio99</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra DonJavier01</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra DonJavier01</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra charliecc13</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra charliecc13</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Ramboromir</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Ramboromir</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Chechu_25</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Chechu_25</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Alvew</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Alvew</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Alberto17MG</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Alberto17MG</div><br>
+</div><div>
+    <h4 class="porjugar_main"><a href="/perfiles/Alvew.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Alvew</a></h4>
+
+    <div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra oskiyu2</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra oskiyu2</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Joderio99</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Joderio99</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra DonJavier01</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra DonJavier01</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra charliecc13</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra charliecc13</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Ramboromir</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Ramboromir</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Chechu_25</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Chechu_25</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra FranSuoo</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra FranSuoo</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Alberto17MG</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Alberto17MG</div><br>
+</div><div>
+    <h4 class="porjugar_main"><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></h4>
+
+    <div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra oskiyu2</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra oskiyu2</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Joderio99</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Joderio99</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra DonJavier01</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra DonJavier01</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra charliecc13</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra charliecc13</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Ramboromir</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Ramboromir</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Chechu_25</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Chechu_25</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra FranSuoo</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra FranSuoo</div><br><div class="porjugar_subentry"><span class="porjugar_color">Blancas</span> contra Alvew</div><div class="porjugar_subentry"><span class="porjugar_color">Negras</span> contra Alvew</div><br>
+</div>
+</details>
+
+
+         <h2 class="centerText title-lines">Historial de partidas</h2>
+         <h3 class="centerText">Fase de liga</h3>
+         
+<div class="centerText">Filtrar por nombres: 
+    <input onkeydown='searchInTable()' onkeyup='searchInTable()' type='text' id="searchInput" placeholder="Primer jugador">
+    <input onkeydown='searchInTable()' onkeyup='searchInTable()' type='text' id="searchInput2" placeholder="Segundo jugador">
+</div>
+
+<div style="overflow-x:auto;">
+<table class="tables matches-table" id="historyTable">
+    <tr id="header">
+        <th>Blancas</th>
+        <th>Negras</th>
+        <th>Movimientos</th>
+        <th>Duración</th>
+        <th>URL</th>
+    </tr>
+
+
+
+</table>
+</div>
+              
+
+        <h2 class="centerText title-lines">Estadísticas</h2>
+        <div style="overflow-x:auto;">
+  <table class="tables stats-table">
+      <tr>
+        <td>Partidas totales</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Victorias de blancas</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Empates</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Victorias de negras</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Media de movimientos</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Duración media de partida</td>
+        <td>0h 0m 0s</td>
+      </tr>
+      <tr>
+        <td>Duración media por turno</td>
+        <td>0 segundos</td>
+      </tr>
+  </table>
+</div>
+
+         <h4 class="centerText">Clasificación por ELO (al inicio del torneo)</h2>
+        <table class="tables elo-ranking podium-table">
+    <tr>
+        <th>Nombre</th>
+        <th>ELO</th>
+      </tr>
+
+      <tr>
+    <td><a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a></td>
+    <td>591</td>
+</tr><tr>
+    <td><a href="/perfiles/Joderio99.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Joderio99</a></td>
+    <td>568</td>
+</tr><tr>
+    <td><a href="/perfiles/DonJavier01.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> DonJavier01</a></td>
+    <td>413</td>
+</tr><tr>
+    <td><a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a></td>
+    <td>340</td>
+</tr><tr>
+    <td><a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a></td>
+    <td>299</td>
+</tr><tr>
+    <td><a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a></td>
+    <td>218</td>
+</tr><tr>
+    <td><a href="/perfiles/FranSuoo.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> FranSuoo</a></td>
+    <td>216</td>
+</tr><tr>
+    <td><a href="/perfiles/Alvew.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Alvew</a></td>
+    <td>-</td>
+</tr><tr>
+    <td><a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a></td>
+    <td>-</td>
+</tr>
+</table>
+
+    </body>
+
+    <footer class="footer centerText footertitle">
+    <img class="lwmimage" src="/assets/lwm.png" width=50em height=auto/>
+    <p>Chess-Wachín Series, organizado por oskiyu y martilux2580.
+    <br>Página generada con <a href="https://github.com/oskiyu/ChessWachinSSG">ChessWachinSSG 1.5.2.0</a>.</p>
+</footer>
+</html>
