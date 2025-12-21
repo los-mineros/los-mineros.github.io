@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Chess-Wachín</title>
+        <link rel="stylesheet" href="../../css/torunament.css" />
+        <link rel="stylesheet" href="../../css/tables.css" />
+        <link rel="stylesheet" href="../../css/background-blitz.css" />
+        <link rel="stylesheet" href="../../css/index.css" />
+        
+        <link rel="stylesheet" href="../overlays.css" />
+
+        <link rel="icon" type="image/png" href="../../favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="../../favicon-16x16.png" sizes="16x16" />
+
+        <script src="../flag.js"></script> 
+    </head>
+
+    <body onload="javascript:sortTable()">
+
+        <div class="background"></div>
+        <div class="backgroundAnimated"></div>
+        <div class="content">
+
+        <div class="overlayfullCombat">
+
+            <div class="overlayleftCombat overlaycombatDisplay overlaycombatBackgroundSimple"> <!-- OSKIYU -->
+                <div class="overlaycombatContent">
+                    
+                    <div>
+                        <img class="overlaycombatPfp" src="../../assets/oskiyu.png">
+                    </div>
+
+                    <div class="overlaycombatStats spainBackground">&emsp; Estadísticas:
+                        <br>
+                        <br>
+                        🥇 1º en liga
+                        <br>
+                        <br>
+                        Durante liga:
+                        <br>
+                        <span class="wintext">28 WINS</span> <span class="drawtext">0 DRAWS</span> <span class="losstext">2 LOSSES</span>
+                        <div class="statsBar centerText">
+                            <span style="width:93.33%" class="statsBarbar1"></span>
+                            <span style="width:0%" class="statsBarbar2"></span>
+                            <span style="width:6.66%" class="statsBarbar3"></span>
+                        </div>
+                        <br>
+                        Histórico:
+                        <br>
+                        <span class="wintext">57 WINS</span> <span class="drawtext">8 DRAWS</span> <span class="losstext">28 LOSSES</span>
+                        <div class="statsBar centerText">
+                            <span style="width:61.3%" class="statsBarbar1"></span>
+                            <span style="width:8.6%" class="statsBarbar2"></span>
+                            <span style="width:30.1%" class="statsBarbar3"></span>
+                        </div>
+                        <br>
+                        Contra charliecc13:
+                        <br>
+                        <span class="wintext">9 WINS</span> <span class="drawtext">1 DRAWS</span> <span class="losstext">3 LOSSES</span>
+                        <div class="statsBar centerText">
+                            <span style="width:69.23%" class="statsBarbar1"></span>
+                            <span style="width:7.69%" class="statsBarbar2"></span>
+                            <span style="width:23%" class="statsBarbar3"></span>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- CAMBIAR A MEDIDA QUE SE JUEGUEN LAS PARTIDAS -->
+                    <!-- SUMAR 2 EN CASO DE VICTORIA, 1 EN CASO DE EMPATE -->
+                    <div class="points centerText">0</div>
+                    <div class="centerText overlayplayerName">oskiyu2</div>
+                </div>
+            </div>
+            
+            <div class="verticalContainer">
+
+                <div class="centerText titleGroup">
+                    <h1 class="semis">FINAL</h1>
+                </div>
+
+                <div class="results centerText"> <!-- RESULTADOS -->
+                    <!-- IR CAMBIANDO A MEDIDA QUE SE JUEGUEN LAS PARTIDAS -->
+                    <!-- SI GANA oskiyu, cambiar source por "../../assets/oskiyu.png"-->
+                    <!-- SI GANA charli, cambiar source por "../../assets/charli.jpeg"-->
+                    <!-- SI HAY EMPATE, cambiar source por "../../assets/empateOskiyuCharlie.png"-->
+                    <img class="matchResult" src="../../assets/tbd.png"></img>
+                    <img class="matchResult" src="../../assets/tbd.png"></img>
+                    <img class="matchResult" src="../../assets/tbd.png"></img>
+                    <img class="matchResult" src="../../assets/tbd.png"></img>
+                    <img class="matchResult" src="../../assets/tbd.png"></img>
+                    <img class="matchResult" src="../../assets/tbd.png"></img>
+                    <img class="matchResult" src="../../assets/tbd.png"></img>
+                </div>
+
+                <div class="view"></div>
+
+                    <img class="bcw1" src="../../assets/bcw2.png"/>
+            </div>
+
+            <div class="overlayrightCombat overlaycombatDisplay overlaycombatBackgroundSimple"> <!-- CHARLI -->
+                <div class="overlaycombatContent">
+                    
+                    <div>
+                        <img class="overlaycombatPfp" src="../../assets/charli.jpeg">
+                    </div>
+
+                    <div class="overlaycombatStats spainBackground">&emsp; Estadísticas:
+                        <br>
+                        <br>
+                        🥈 2º en liga
+                        <br>
+                        <br>
+                        Durante liga:
+                        <br>
+                        <span class="wintext">15 WINS</span> <span class="drawtext">3 DRAWS</span> <span class="losstext">5 LOSSES</span>
+                        <div class="statsBar centerText">
+                            <span style="width:65.21%" class="statsBarbar1"></span>
+                            <span style="width:13%" class="statsBarbar2"></span>
+                            <span style="width:21.7%" class="statsBarbar3"></span>
+                        </div>
+                        <br>
+                        Histórico:
+                        <br>
+                        <span class="wintext">41 WINS</span> <span class="drawtext">10 DRAWS</span> <span class="losstext">32 LOSSES</span>
+                        <div class="statsBar centerText">
+                            <span style="width:49.4%" class="statsBarbar1"></span>
+                            <span style="width:12%" class="statsBarbar2"></span>
+                            <span style="width:38.6%" class="statsBarbar3"></span>
+                        </div>
+                        <br>
+                        Contra oskiyu2:
+                        <br>
+                        <span class="wintext">3 WINS</span> <span class="drawtext">1 DRAWS</span> <span class="losstext">9 LOSSES</span>
+                        <div class="statsBar centerText">
+                            <span style="width:23%" class="statsBarbar1"></span>
+                            <span style="width:7.69%" class="statsBarbar2"></span>
+                            <span style="width:69.23%" class="statsBarbar3"></span>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- CAMBIAR A MEDIDA QUE SE JUEGUEN LAS PARTIDAS -->
+                    <!-- SUMAR 2 EN CASO DE VICTORIA, 1 EN CASO DE EMPATE -->
+                    <div class="points centerText">0</div>
+                    <div class="centerText overlayplayerName">charliecc13</div>
+                </div>
+            </div>
+            
+        </div>
+
+    </body>
+</html>
