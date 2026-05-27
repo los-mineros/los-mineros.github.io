@@ -5,7 +5,7 @@
 }
 
 .countdown-element {
-    font-family: 'Arial Black';
+    font-family: 'Hot ink';
     margin-left: 0.8em;
     margin-right: 0.8em;
     font-size: 2.5em;
@@ -22,8 +22,8 @@
 }
 
 .countdown {
-    border-color: #108d00b9;
-    background-color: rgba(85, 248, 53, 0.226);
+    border-color: rgb(219, 84, 21);
+    background-color: rgba(255, 143, 52, 0.527);
     border-radius: 0.3em;
     border-width: 0.2em;
     border-style: solid;
@@ -54,16 +54,16 @@
 
 @keyframes coundown-pulse {
     0% {
-        border-color: #259c0d;
-        background-color: rgba(13, 240, 100, 0.226);
+        border-color: rgb(219, 84, 21);
+        background-color: rgba(255, 143, 52, 0.527);
     }
     50% {
-        border-color: #48d371;
-        background-color: rgba(10, 161, 68, 0.226);
+        border-color: rgb(219, 133, 21);
+        background-color: rgba(189, 121, 66, 0.527);
     }
     100% {
-        border-color: #259c0d;
-        background-color: rgba(13, 240, 100, 0.226);
+        border-color: rgb(219, 84, 21);
+        background-color: rgba(255, 143, 52, 0.527);
     }
   }
   

@@ -1,0 +1,110 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chess-Wachín</title>
+        <link rel="stylesheet" href="/css/index.css" />
+        <link rel="stylesheet" href="/css/torunament.css" />
+        <link rel="stylesheet" href="/css/tables.css" />
+        <link rel="stylesheet" href="/css/h2h.css" />
+        <link rel="stylesheet" href="/css/background-default.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/sidebar_editions.css" />
+        <link rel="stylesheet" href="/css/news.css" />
+
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+        
+        <script type="text/javascript" src="/scripts/sidebar_ediciones.js"></script>
+
+		<BASE href="./">
+    </head>
+
+    <header class="header">
+    <h1 class="header_title header_no_underline">        
+      <a href="/index.html" class="header_no_underline"><img class="header_img" src="/assets/chess wachin logo.png"/><span class="header_no_underline header_title_text">CHESS WACHÍN SERIES</span><span class="header_title_text_mobile">CWS</span></a>
+    </h1>
+    <div class="topnav">
+      <a class="topnav_element" href="/index.html">INICIO</a>
+      <a class="topnav_element" href="/news/news.html">NOTICIAS</a>
+
+      <!--<div class="topnav_element topnav_dropdown">
+        EDICIONES
+
+        <div class="topnav_dropdown_content">
+          <a href="ediciones/blitzchesswachin1.html" class="topbuttonbcw">
+            <img class="titleGroup" src="assets/BlitzChessWachinMini.png"/>
+            Blitz-Chess-Wachín I
+          </a>
+          <a href="ediciones/chesswachin1.html" class="topbuttoncw">
+            <img class="titleGroup" src="assets/ChessWachinMini.png"/>
+            Chess-Wachín I
+          </a>
+        </div>
+      </div>-->
+      <div class="topnav_element topnav_dropdown">
+        JUGADORES
+
+        <div class="topnav_dropdown_content topnav_player_content">
+            <a href="/perfiles/oskiyu2.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a><a href="/perfiles/martilux2580.html" class="enlaceBandera topnav_player"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a><a href="/perfiles/charliecc13.html" class="enlaceBandera topnav_player"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a><a href="/perfiles/MrMhem.html" class="enlaceBandera topnav_player"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a><a href="/perfiles/Chechu_25.html" class="enlaceBandera topnav_player"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a><a href="/perfiles/Ramboromir.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a><a href="/perfiles/Alberto17MG.html" class="enlaceBandera topnav_player"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a><a href="/perfiles/Epsilon3236.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> Epsilon3236</a><a href="/perfiles/Joderio99.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> Joderio99</a><a href="/perfiles/josejo3.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> josejo3</a><a href="/perfiles/AnnakinVader67.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> AnnakinVader67</a><a href="/perfiles/DonJavier01.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> DonJavier01</a><a href="/perfiles/Alvew.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> Alvew</a><a href="/perfiles/FranSuoo.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> FranSuoo</a><a href="/perfiles/retah3.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> retah3</a><a href="/perfiles/Eduu_3012.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> Eduu_3012</a>
+        </div>
+      </div>
+      
+      <a class="topnav_element" href="/stats/global_stats.html">ESTADÍSTICAS</a>
+    </div>
+  </header>
+
+    <body>
+      <button id="open_editions_sidebar" class="edition_show_button" onclick="open_editions_sidenav()">&#9776; EDICIONES</button>
+    <div id="editions_sidebar" class="sidenav_editions">
+    <a href="javascript:void(0)" class="edition_hide_button" onclick="close_editions_sidenav()">&times; EDICIONES</a>
+
+    <a href="/ediciones/freestylechesswachin2.html" class="edition_type_fscw">
+        <img class="titleGroup" src="/assets/freestylechesswachin2.png"/>
+    </a>
+
+    <a href="/ediciones/blitzchesswachin2.html" class="edition_type_bcw">
+        <img class="titleGroup" src="/assets/bcw2.png"/>
+    </a>
+
+    <a href="/ediciones/chesswachin2.html" class="edition_type_cw">
+        <img class="titleGroup" src="/assets/chesswachin2title.png"/>
+    </a>
+
+    <a href="/ediciones/freestylechesswachin1.html" class="edition_type_fscw">
+        <img class="titleGroup" src="/assets/freestylechesswachin1.png"/>
+    </a>
+
+    <a href="/ediciones/blitzchesswachin1.html" class="edition_type_bcw">
+        <img class="titleGroup" src="/assets/bcw1.png"/>
+    </a>
+
+    <a href="/ediciones/chesswachin1.html" class="edition_type_cw">
+        <img class="titleGroup" src="/assets/cwc1.png"/>
+    </a>
+</div>
+        <div class="content" id="content">
+
+            <div class="news_entry">
+                <div class="news_image_and_title">
+                    <div class="news_content">
+                        <img class="news_image" src="/assets/freestylechesswachin2.png">
+                            <br>
+                        <h1 class="news_title">¡El Freestyle Chess-Wachín II comenzará el 1 de junio!</h1>
+                        <div class="news_date">Miércoles, 27 de mayo de 2026.</div>
+                            <br>
+                        Seis meses después de la final del Blitz-Chess-Wachín II volveremos a tener campeonato del Chess Wachín. Esta vez regresamos a las partidas de ajedrez 960, en las que las posiciones iniciales de las piezas se establecen de manera aleatoria. De esta manera las aperturas tradicionales no sirven, y se necesitará una mayor creatividad desde el comienzo de la partida.<br><br>Esta edición será disputada por 9 jugadores, por lo que tendremos una fase de liga con 3 clasificaciones directas a playoffs, y con una fase clasificatoria intermedia en la que los jugadores 4º, 5, 6º y 7º se jugarán la última plaza de playoffs.<br><br>Esta edición contará con dos nuevas incorporaciones (retah3 y Eduu_3012), pero también perdemos a charliecc13 que muy posiblemente no pueda participar. martilux2580 también ha confirmado su ausencia y vovlerá a vivir el chess-wachín desde las trincheras, igual que ocurrió en la última edición.
+                    </div>
+                </div>
+            </div>
+
+        </div>       
+    </body>
+
+    <footer class="footer centerText footertitle">
+    <img class="lwmimage" src="/assets/lwm.png" width=50em height=auto/>
+    <p>Chess-Wachín Series, organizado por oskiyu y martilux2580.
+    <br>Página generada con <a href="https://github.com/oskiyu/ChessWachinSSG">ChessWachinSSG 1.5.2.0</a>.</p>
+</footer>
+</html>

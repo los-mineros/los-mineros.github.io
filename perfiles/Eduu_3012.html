@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chess-Wachín</title>
+        <link rel="stylesheet" href="/css/index.css" />
+        <link rel="stylesheet" href="/css/torunament.css" />
+        <link rel="stylesheet" href="/css/tables.css" />
+        <link rel="stylesheet" href="/css/h2h.css" />
+        <link rel="stylesheet" href="/css/background-default.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/sidebar_editions.css" />
+        <link rel="stylesheet" href="/css/players.css" />
+        <link rel="stylesheet" href="/css/profile_results.css" />
+
+        <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+
+        <script type="text/javascript" src="/scripts/sidebar_ediciones.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+      
+            function drawChart() {
+      
+              var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Victorias',   0],
+                ['Empates',     0],
+                ['Derrotas',    0]
+              ]);
+      
+              var options = {
+                slices: {
+                    0: { color: 'green' },
+                    1: { color: 'gray' },
+                    2: { color: 'red' },
+                },
+                backgroundColor: { fill:'transparent' },
+                legend: {
+                    position: 'bottom',
+                    textStyle: {color: 'white' }
+                }
+              };
+      
+              var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      
+              chart.draw(data, options);
+            }
+          </script>
+      
+    </head>
+    
+    <header class="header">
+    <h1 class="header_title header_no_underline">        
+      <a href="/index.html" class="header_no_underline"><img class="header_img" src="/assets/chess wachin logo.png"/><span class="header_no_underline header_title_text">CHESS WACHÍN SERIES</span><span class="header_title_text_mobile">CWS</span></a>
+    </h1>
+    <div class="topnav">
+      <a class="topnav_element" href="/index.html">INICIO</a>
+      <a class="topnav_element" href="/news/news.html">NOTICIAS</a>
+
+      <!--<div class="topnav_element topnav_dropdown">
+        EDICIONES
+
+        <div class="topnav_dropdown_content">
+          <a href="ediciones/blitzchesswachin1.html" class="topbuttonbcw">
+            <img class="titleGroup" src="assets/BlitzChessWachinMini.png"/>
+            Blitz-Chess-Wachín I
+          </a>
+          <a href="ediciones/chesswachin1.html" class="topbuttoncw">
+            <img class="titleGroup" src="assets/ChessWachinMini.png"/>
+            Chess-Wachín I
+          </a>
+        </div>
+      </div>-->
+      <div class="topnav_element topnav_dropdown">
+        JUGADORES
+
+        <div class="topnav_dropdown_content topnav_player_content">
+            <a href="/perfiles/oskiyu2.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a><a href="/perfiles/martilux2580.html" class="enlaceBandera topnav_player"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a><a href="/perfiles/charliecc13.html" class="enlaceBandera topnav_player"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a><a href="/perfiles/MrMhem.html" class="enlaceBandera topnav_player"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a><a href="/perfiles/Chechu_25.html" class="enlaceBandera topnav_player"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a><a href="/perfiles/Ramboromir.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a><a href="/perfiles/Alberto17MG.html" class="enlaceBandera topnav_player"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a><a href="/perfiles/Epsilon3236.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> Epsilon3236</a><a href="/perfiles/Joderio99.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> Joderio99</a><a href="/perfiles/josejo3.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> josejo3</a><a href="/perfiles/AnnakinVader67.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> AnnakinVader67</a><a href="/perfiles/DonJavier01.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> DonJavier01</a><a href="/perfiles/Alvew.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> Alvew</a><a href="/perfiles/FranSuoo.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> FranSuoo</a><a href="/perfiles/retah3.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> retah3</a><a href="/perfiles/Eduu_3012.html" class="enlaceBandera topnav_player"><img src="/assets/flagSpain.png" class="bandera" alt=""> Eduu_3012</a>
+        </div>
+      </div>
+      
+      <a class="topnav_element" href="/stats/global_stats.html">ESTADÍSTICAS</a>
+    </div>
+  </header>
+
+    <body>
+        <button id="open_editions_sidebar" class="edition_show_button" onclick="open_editions_sidenav()">&#9776; EDICIONES</button>
+    <div id="editions_sidebar" class="sidenav_editions">
+    <a href="javascript:void(0)" class="edition_hide_button" onclick="close_editions_sidenav()">&times; EDICIONES</a>
+
+    <a href="/ediciones/freestylechesswachin2.html" class="edition_type_fscw">
+        <img class="titleGroup" src="/assets/freestylechesswachin2.png"/>
+    </a>
+
+    <a href="/ediciones/blitzchesswachin2.html" class="edition_type_bcw">
+        <img class="titleGroup" src="/assets/bcw2.png"/>
+    </a>
+
+    <a href="/ediciones/chesswachin2.html" class="edition_type_cw">
+        <img class="titleGroup" src="/assets/chesswachin2title.png"/>
+    </a>
+
+    <a href="/ediciones/freestylechesswachin1.html" class="edition_type_fscw">
+        <img class="titleGroup" src="/assets/freestylechesswachin1.png"/>
+    </a>
+
+    <a href="/ediciones/blitzchesswachin1.html" class="edition_type_bcw">
+        <img class="titleGroup" src="/assets/bcw1.png"/>
+    </a>
+
+    <a href="/ediciones/chesswachin1.html" class="edition_type_cw">
+        <img class="titleGroup" src="/assets/cwc1.png"/>
+    </a>
+</div>
+        
+        <div class="content" id="content">
+
+            <div class="centerText titleGroup">
+                <div class="pfp_country_card pfp_country_card_spain">
+    <div class="pfp_card">
+        <div class="pfp_card_line">
+            <div class="centerText">
+                <img src="/assets/defaultpfp.svg" class="pfp player_pf_name centerText">
+                <span class="player_pf_name ">Eduu_3012</span></img>
+            </div>
+            
+            <span class="pfp_global_ranking_card pfp_logros_text"></span>
+            
+            <div class="pfp_global_ranking_card">
+                <span class="pfp_global_ranking_text">Global Ranking</span>
+                <p class="pfp_global_ranking_position ">#16</p>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+
+                <h2 class="centerText">Records</h2>
+                <p class="explanationBox">
+                    Mejor racha de victorias: 0 (en curso)
+<br>
+Mejor racha sin perder: 0 (en curso)
+<br>
+Mayor racha de derrotas: 0 (en curso)
+<br>
+<br>
+Más puntos en una fase de liga: 0 ()
+<br>
+Más victorias en una fase de liga: 0 ()
+                </p>  
+                
+                <div class="centerText pf_result_card" style="overflow-x:auto;">
+    <h2>Resultados</h2>
+
+    <div class="pf_result_line pf_result_type_freestyle">
+
+    <img class="pf_result_logo" src="/assets/FreeStyleChessWachinMini.png">
+    <p class="pf_result_name">Freestyle Chess-Wachín II</p>
+
+    <div class="pf_result_pack pf_result_line">
+
+        <h3 class="pfp_result_pos_text"><span class="pfp_ranking_bronze">3º</span> </h3>
+        <div class="pf_result_league">
+    <p class="pfp_partial_result_type_text">Liga: </p>
+    <h2 class="pfp_partial_result_pos_text"><span class="">0º</span> </h2>
+</div>
+
+        <div class="pf_result_playoffs">
+    <p class="pfp_partial_result_type_text">Playoffs: </p>
+    <h2 class="pfp_partial_result_pos_text"><span class="">-º</span> </h2>
+</div>
+
+        
+    </div>
+
+</div>
+
+    
+</div>
+
+                <div class="centerText">
+                <h2>Historial</h2>
+                <h4>Chess-Wachín I</h4>
+<div>
+    
+</div><h4>Blitz-Chess-Wachín I</h4>
+<div>
+    
+</div><h4>Free-Style Chess-Wachín I</h4>
+<div>
+    
+</div><h4>Chess-Wachín II</h4>
+<div>
+    
+</div><h4>Blitz-Chess-Wachín II</h4>
+<div>
+    
+</div><h4>Freestyle Chess-Wachín II</h4>
+<div>
+    
+</div>
+                
+                <h4>Total:</h4>
+                <div class="piechart centerText" id="piechart"></div>
+
+                <h4>Por jugador:</h4>
+
+<table class="tables">
+    <tr><td>Contra</td><td>Victorias</td><td>Empates</td><td>Derrotas</td></tr>
+
+    <tr>
+    <td class="matchdraw">
+        <a href="/perfiles/oskiyu2.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> oskiyu2</a>
+    </td>
+    <td class="matchwin">0</td>
+    <td class="matchdraw">0</td>
+    <td class="matchloss">0</td>
+</tr><tr>
+    <td class="matchdraw">
+        <a href="/perfiles/martilux2580.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagUruguay.png" class="bandera" alt=""> martilux2580</a>
+    </td>
+    <td class="matchwin">0</td>
+    <td class="matchdraw">0</td>
+    <td class="matchloss">0</td>
+</tr><tr>
+    <td class="matchdraw">
+        <a href="/perfiles/charliecc13.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> charliecc13 </a>
+    </td>
+    <td class="matchwin">0</td>
+    <td class="matchdraw">0</td>
+    <td class="matchloss">0</td>
+</tr><tr>
+    <td class="matchdraw">
+        <a href="/perfiles/MrMhem.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagMoroccoSpain.png" class="bandera" alt=""> MrMhem </a>
+    </td>
+    <td class="matchwin">0</td>
+    <td class="matchdraw">0</td>
+    <td class="matchloss">0</td>
+</tr><tr>
+    <td class="matchdraw">
+        <a href="/perfiles/Chechu_25.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Chechu_25 </a>
+    </td>
+    <td class="matchwin">0</td>
+    <td class="matchdraw">0</td>
+    <td class="matchloss">0</td>
+</tr><tr>
+    <td class="matchdraw">
+        <a href="/perfiles/Ramboromir.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Ramboromir</a>
+    </td>
+    <td class="matchwin">0</td>
+    <td class="matchdraw">0</td>
+    <td class="matchloss">0</td>
+</tr><tr>
+    <td class="matchdraw">
+        <a href="/perfiles/Alberto17MG.html" class="enlaceBandera <cwssg:profile:classes>"> <img src="/assets/flagSpain.png" class="bandera" alt=""> Alberto17MG </a>
+    </td>
+    <td class="matchwin">0</td>
+    <td class="matchdraw">0</td>
+    <td class="matchloss">0</td>
+</tr><tr>
+    <td class="matchdraw">
+        <a href="/perfiles/Epsilon3236.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Epsilon3236</a>
+    </td>
+    <td class="matchwin">0</td>
+    <td class="matchdraw">0</td>
+    <td class="matchloss">0</td>
+</tr><tr>
+    <td class="matchdraw">
+        <a href="/perfiles/Joderio99.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Joderio99</a>
+    </td>
+    <td class="matchwin">0</td>
+    <td class="matchdraw">0</td>
+    <td class="matchloss">0</td>
+</tr><tr>
+    <td class="matchdraw">
+        <a href="/perfiles/josejo3.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> josejo3</a>
+    </td>
+    <td class="matchwin">0</td>
+    <td class="matchdraw">0</td>
+    <td class="matchloss">0</td>
+</tr><tr>
+    <td class="matchdraw">
+        <a href="/perfiles/AnnakinVader67.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> AnnakinVader67</a>
+    </td>
+    <td class="matchwin">0</td>
+    <td class="matchdraw">0</td>
+    <td class="matchloss">0</td>
+</tr><tr>
+    <td class="matchdraw">
+        <a href="/perfiles/DonJavier01.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> DonJavier01</a>
+    </td>
+    <td class="matchwin">0</td>
+    <td class="matchdraw">0</td>
+    <td class="matchloss">0</td>
+</tr><tr>
+    <td class="matchdraw">
+        <a href="/perfiles/Alvew.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> Alvew</a>
+    </td>
+    <td class="matchwin">0</td>
+    <td class="matchdraw">0</td>
+    <td class="matchloss">0</td>
+</tr><tr>
+    <td class="matchdraw">
+        <a href="/perfiles/FranSuoo.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> FranSuoo</a>
+    </td>
+    <td class="matchwin">0</td>
+    <td class="matchdraw">0</td>
+    <td class="matchloss">0</td>
+</tr><tr>
+    <td class="matchdraw">
+        <a href="/perfiles/retah3.html" class="enlaceBandera <cwssg:profile:classes>"><img src="/assets/flagSpain.png" class="bandera" alt=""> retah3</a>
+    </td>
+    <td class="matchwin">0</td>
+    <td class="matchdraw">0</td>
+    <td class="matchloss">0</td>
+</tr>
+
+</table>
+            </div>
+
+        </div>
+    </body>
+    
+    <footer class="footer centerText footertitle">
+    <img class="lwmimage" src="/assets/lwm.png" width=50em height=auto/>
+    <p>Chess-Wachín Series, organizado por oskiyu y martilux2580.
+    <br>Página generada con <a href="https://github.com/oskiyu/ChessWachinSSG">ChessWachinSSG 1.5.2.0</a>.</p>
+</footer> 
+</html>
