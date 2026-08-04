@@ -178,6 +178,7 @@
 .round-draw { background-color: var(--draw_background); }
 .round-loss { background-color: var(--loss_background); }
 .round-none { background-color: #3939445d; }
+.round-banned { color: var(--banned_foreground); background-color: var(--banned_background); }
 
 .round-win:hover { background-color: var(--win_background_hover); }
 .round-draw:hover { background-color: var(--draw_background_hover); }

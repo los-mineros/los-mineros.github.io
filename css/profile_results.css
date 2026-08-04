@@ -12,6 +12,20 @@
     margin: auto;
 }
 
+.pf_ban_card {
+    border-radius: 0.5em;
+    width: 60%;
+    background-color: #9256569a;
+    padding: 0.2em;
+    border-color: #fc0000;
+    border-width: 0.2em;
+    border-style: solid;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
 .pf_result_line {
     display: flex;
     vertical-align: middle;

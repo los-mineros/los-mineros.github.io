@@ -24,6 +24,9 @@
   --draw_background_hover: #98a198af;
   --loss_background_hover: rgba(247, 37, 37, 0.616);
   --semiwin_background_hover: #d3d153d3;
+  
+  --banned_foreground: rgb(228, 22, 22);
+  --banned_background: rgb(44, 9, 9);
 }
 
 /* ------ General ------ */
